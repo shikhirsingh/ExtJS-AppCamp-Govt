@@ -71,8 +71,8 @@ ext.dir=${workspace.dir}/ext
 
 ## Step 5: Install Ext JS Premium Addons
 
-1. In Step 2, we received an email upon completing the Ext JS form for Ext JS Trial which contained the link for Ext JS. This email also contains the link for "Pivot Grid, D3 Adapter, Calendar, and Exporter add-ons". Please download the addons. If you have an Ext JS Premium license, you can download the adds from the [Support Portal](http://support.sencha.com). The addons are called "Ext Premium Addons" and available under the Downlaod section of the site.
-2. After you unzip the file, copy only the folders located inside of the packages subdirectory of the extracted file into the SenchaTraining/packages directory.
+1. In Step 2, we received an email from downloads@sencha.com upon completing the form to download Ext JS Trial which contained the link for Ext JS 6 Trial. This email also contains the link for "Pivot Grid, D3 Adapter, Calendar, and Exporter add-ons". Please download the addons. If you have an Ext JS Premium license, you can download the Addons from the [Support Portal](http://support.sencha.com). The addons in the Support Portal are called "Ext Premium Addons" and available under the Downlaod section of the site.
+2. After you unzip the file, copy only the folders located inside of the packages subdirectory of the newly extracted file into the SenchaTraining/packages directory.
 
 After completing this step, you folder structure should look like this
 
@@ -174,7 +174,7 @@ This step is optional. We will be covering how to package your apps for mobile d
 npm install -g cordova
 ```
 
-## Step 11 (Optional): macOS and Linux users only - Install Wine
+## Step 11 (Optional): macOS and Linux attendees only - Install Wine
 
 This step is optional.  If you wish to learn how to package your Ext JS apps on Mac to create an executable binary (.exe files) for Windows, you will need to complete this step. If you choose not to follow this step, you will still be able to package your apps for macOS(.app files) and Linux to create executable binaries.
 
