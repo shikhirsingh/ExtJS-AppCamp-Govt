@@ -36,7 +36,7 @@ SenchaTraining/
 
 ## Step 4: Create a Sencha Cmd Workspace
 
-On macOS, in a fresh terminal window type in the following command:
+On macOS, in a fresh terminal window, go to the SenchaTraining folder and type in the following command:
 ```
 sencha generate workspace ~/SenchaTraining/
 ```
@@ -55,7 +55,7 @@ SenchaTraining/
 
 ```
 
-* Now we will need to open the workspace.json file and search it to ensure that the "frameworks" property is set to ext. If it is not included, please add the following in the workspace.json file on line 2:
+* Now we will need to open the SenchaTraining/workspace.json file and search it to ensure that the "frameworks" property is set to ext. If it is not included, please add the following in the workspace.json file on line 2:
 ```
     "frameworks": {
         "ext": {
@@ -63,6 +63,10 @@ SenchaTraining/
             "version":"6.2.0.981"
         }
     },
+```
+ * Next we will add the following line in the file SenchaTraining/.sencha/workspace/sencha.cfg
+```
+ext.dir=${workspace.dir}/ext
 ```
 
 ## Step 5: Install Ext JS Premium Addons
@@ -87,7 +91,7 @@ SenchaTraining/
 ```
 ## Step 6: Check your installation
 
-* In the SenchaTraining/ folder run the following command via Terminal / Command Prompt
+* In the SenchaTraining/ folder run the following command via Terminal / Command Prompt.
 ```
 sencha web start
 ```
@@ -101,6 +105,7 @@ Sencha Cmd v6.2.0.103
 [INF] Server started at port : 1841
 
 ```
+* Do not close this Terminal / Command Prompt window until you are done with Step 7
 
 * Now visit the following site [http://localhost:1841/](http://localhost:1841) and ensure you can see the following:
 <img src="correct_setup.jpg" align="center" />
@@ -108,6 +113,48 @@ Sencha Cmd v6.2.0.103
 * After you click on the ext folder. You should see the following:
 
  <img src="welcome.jpg" align="center" />
+
+## Step 7: HelloWorld
+
+* In the SenchaTraining folder, type in the following in terminal / Command Prompt
+
+```
+sencha -sdk ./ext generate app -modern HelloWorld helloworld
+```
+
+* After you run this step, you should see output that looks like this
+```
+$ sencha -sdk ./ext generate app -modern HelloWorld helloworld
+Sencha Cmd v6.2.0.103
+[INF] Processing Build Descriptor : default
+[INF] Loading app json manifest...
+[INF] Appending content to /Users/shikhir/SenchaTraining/helloworld/bootstrap.js
+[INF] Writing content to /Users/shikhir/SenchaTraining/helloworld/bootstrap.json
+[INF] merging 375 input resources into /Users/shikhir/SenchaTraining/build/development/HelloWorld/resources
+[INF] merged 375 resources into /Users/shikhir/SenchaTraining/build/development/HelloWorld/resources
+[INF] merging 17 input resources into /Users/shikhir/SenchaTraining/build/development/HelloWorld
+[INF] merged 17 resources into /Users/shikhir/SenchaTraining/build/development/HelloWorld
+[INF] Writing content to /Users/shikhir/SenchaTraining/helloworld/sass/example/bootstrap.json
+[INF] Writing content to /Users/shikhir/SenchaTraining/helloworld/sass/example/bootstrap.js
+[INF] writing sass content to /Users/shikhir/SenchaTraining/build/temp/development/HelloWorld/sass/HelloWorld-all.scss.tmp
+[INF] appending sass content to /Users/shikhir/SenchaTraining/build/temp/development/HelloWorld/sass/HelloWorld-all.scss.tmp
+[INF] appending sass content to /Users/shikhir/SenchaTraining/build/temp/development/HelloWorld/sass/HelloWorld-all.scss.tmp
+[INF] writing sass content to /Users/shikhir/SenchaTraining/build/temp/development/HelloWorld/sass/config.rb
+[INF] Writing content to /Users/shikhir/SenchaTraining/build/development/HelloWorld/app.json
+[LOG] Building /Users/shikhir/SenchaTraining/build/temp/development/HelloWorld/sass/HelloWorld-all.scss
+Exiting with code 0
+[INF] Appending content to /Users/shikhir/SenchaTraining/helloworld/bootstrap.js
+[INF] Writing content to /Users/shikhir/SenchaTraining/helloworld/bootstrap.json
+[INF] Adding application to workspace.json
+
+$ 
+
+```
+
+* Again, visit the following site [http://localhost:1841/](http://localhost:1841) and ensure you can see the following:
+<img src="hello-world-works.jpg" align="center" />
+
+
 
 ## Step 7: Install Node.js
 
