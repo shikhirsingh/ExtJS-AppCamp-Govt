@@ -167,7 +167,7 @@ $
 
 This step is optional if you are not interested in learning how to package your app for mobile devices. 
 
-* Download and install [Android Studio](https://developer.android.com/studio/install.html)
+* Download and install [Android Studio](https://developer.android.com/studio/install.html) or the [Android Command Line Tools](https://developer.android.com/studio/index.html) (which is much smaller)
 * Run the following command from Terminal or Command Prompt
 
 ```
@@ -190,3 +190,4 @@ If you don't have MacPorts install, I recommend you skip this step. [Installing 
 ## Troubleshooting
 
 * Make sure you are executing the command in the correct directory. Nearly all issues are a result of this.
+* In some cases, you may need to close the Terminal or Command Prompt windows and reopen it. This is ensure that all your installed software is loaded in the path.
