@@ -114,7 +114,7 @@ Sencha Cmd v6.2.0.103
 
  <img src="welcome.jpg" align="center" />
 
-## Step 7: HelloWorld
+## Step 7: HelloWorld Test
 
 * In the SenchaTraining folder, type in the following in terminal / Command Prompt
 
@@ -151,20 +151,19 @@ $
 
 ```
 
-* Again, visit the following site [http://localhost:1841/](http://localhost:1841) and ensure you can see the following:
+* Again, visit the following site [http://localhost:1841/helloworld/](http://localhost:1841/helloworld/) and ensure you can see the following:
 <img src="hello-world-works.jpg" align="center" />
 
 
-
-## Step 7: Install Node.js
+## Step 8: Install Node.js
 
 * Download and install [Node.js](nodejs.org)
 
-## Step 8: Install Google Chrome
+## Step 9: Install Google Chrome
 
 * Download and Install Chrome from [here](https://www.google.com/intl/en/chrome/). We will need Google Chrome for debugging our apps.
 
-## Step 9: (Optional) macOS and Linux users only - Install Wine
+## Step 10: (Optional) macOS and Linux users only - Install Wine
 
 This step is optional if you wish to learn how to package your Ext JS apps to create an executable binary (.exe files) for Windows. If you choose not to follow this step, you will still be able to package your apps for macOS(.app files).
 
@@ -175,3 +174,8 @@ sudo port install wine
 Note: the command above may run for 30 minutes or more. 
 
 If you don't have MacPorts install, I recommend you skip this step. Installing Wine can be a challenging process due to the number of dependencies it has. Homebrew can also be used to install Wine.
+
+
+## Troubleshooting
+
+* Make sure you are executing the command in the correct directory. Nearly all issues are a result of this.
