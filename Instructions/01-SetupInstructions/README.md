@@ -4,7 +4,7 @@ Prior to attending the Ext JS App Camp, please follow the setup instructions bel
 
 ## Step 1: Obtain a Text editor or IDE
 
-You are free to use any IDE you wish. If you don't have one, consider downloading [Visual Studio Code](http://code.visualstudio.com/) which works on macOS, Linux, or Windows. Other good options include Visual Studio, Eclipse, and WebStorm. Please avoid using notepad. 
+You are free to use any IDE you wish. If you don't have one, consider downloading [Visual Studio Code](http://code.visualstudio.com/) which works on macOS, Linux, or Windows. Other good options include Visual Studio, Eclipse, and WebStorm. Please avoid using Notepad. 
 
 ## Step 2: Create the Course Folder
 
@@ -165,7 +165,7 @@ $
 
 ## Step 10 (Optional): Install Cordova
 
-This step is optional if you are not interested in learning how to package your app for mobile devices. 
+This step is optional. We will be covering how to package your apps for mobile devices. Some students who aren't interested in this just prefer to watch and therefore do not need this installed.
 
 * Download and install [Android Studio](https://developer.android.com/studio/install.html) or the [Android Command Line Tools](https://developer.android.com/studio/index.html) (which is much smaller)
 * Run the following command from Terminal or Command Prompt
@@ -176,7 +176,7 @@ npm install -g cordova
 
 ## Step 11 (Optional): macOS and Linux users only - Install Wine
 
-This step is optional if you wish to learn how to package your Ext JS apps to create an executable binary (.exe files) for Windows. If you choose not to follow this step, you will still be able to package your apps for macOS(.app files).
+This step is optional.  If you wish to learn how to package your Ext JS apps on Mac to create an executable binary (.exe files) for Windows, you will need to complete this step. If you choose not to follow this step, you will still be able to package your apps for macOS(.app files) and Linux to create executable binaries.
 
 * If you have [MacPorts](macports.org) installed, run the following command:
 ```
@@ -190,4 +190,4 @@ If you don't have MacPorts install, I recommend you skip this step. [Installing 
 ## Troubleshooting
 
 * Make sure you are executing the command in the correct directory. Nearly all issues are a result of this.
-* In some cases, you may need to close the Terminal or Command Prompt windows and reopen it. This is ensure that all your installed software is loaded in the path.
+* In some cases, you may need to close the Terminal or Command Prompt window and reopen it. This is ensure that all your installed software is loaded in the path.
