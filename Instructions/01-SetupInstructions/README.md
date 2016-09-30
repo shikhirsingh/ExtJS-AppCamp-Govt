@@ -1,6 +1,6 @@
 # Ext JS 6 - App Camp Setup Instructions
 
-Prior to attending the Ext JS App Camp, please follow the setup instructions below. You will need to bring your laptop at the AppCamp
+Prior to attending the Ext JS App Camp, please follow the setup instructions below on your laptop. You will need to bring your laptop at the AppCamp
 
 ## Step 1: Obtain a Text editor or IDE
 
@@ -55,6 +55,15 @@ SenchaTraining/
 
 ```
 
+* Now we will need to open the workspace.json file and search it to ensure that the "frameworks" property is set to ext. If it is not included, please add the following in the workspace.json file on line 2:
+```
+    "frameworks": {
+        "ext": {
+            "path":"ext",
+            "version":"6.2.0.981"
+        }
+    },
+```
 
 ## Step 5: Install Ext JS Premium Addons
 
@@ -108,9 +117,9 @@ Sencha Cmd v6.2.0.103
 
 * Download and Install Chrome from [here](https://www.google.com/intl/en/chrome/). We will need Google Chrome for debugging our apps.
 
-## Step 9: (Optional) macOS users only - You will need to install Wine
+## Step 9: (Optional) macOS and Linux users only - Install Wine
 
-This step is optional if you wish to learn how to package your apps to create an executable binary (exe files) for Windows. If you choose not to follow this step, you will still be able to package your apps for macOS.
+This step is optional if you wish to learn how to package your Ext JS apps to create an executable binary (.exe files) for Windows. If you choose not to follow this step, you will still be able to package your apps for macOS(.app files).
 
 * If you have [MacPorts](macports.org) installed, run the following command:
 ```
@@ -118,5 +127,4 @@ sudo port install wine
 ```
 Note: the command above may run for 30 minutes or more. 
 
-If you don't have MacPorts install, I recommend you skip this step. Installing Wine can be a challenging process due to the number of dependencies it has. Homebrew can also be used to install Wine
-
+If you don't have MacPorts install, I recommend you skip this step. Installing Wine can be a challenging process due to the number of dependencies it has. Homebrew can also be used to install Wine.
