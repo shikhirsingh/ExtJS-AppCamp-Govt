@@ -31,7 +31,7 @@ SenchaTraining/
 ## Step 4: Install Sencha Cmd 6.2+
 
 1. Download Sencha Cmd from [http://www.sencha.com/products/sencha-cmd/download](http://www.sencha.com/products/sencha-cmd/download) — choose the option that includes the Java JRE.
-2. Run the Sencha Cmd installer. WARNING: Do NOT change the directory it wishes to use for the installation. You will NOT be installing Sencha Cmd in the SenchaTraining directory. 
+2. Run the Sencha Cmd installer. WARNING: Do NOT change the directory the installer recommends using for the installation. A common mistake is to install Sencha Cmd in the SenchaTraining folder. Please do not do this. 
 
 
 ## Step 4: Create a Sencha Cmd Workspace
