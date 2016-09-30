@@ -8,7 +8,7 @@ You are free to use any IDE you wish. If you don't have one, consider downloadin
 
 ## Step 2: Create the Course Folder
 
-**Create a folder to hold your work**
+Create a folder to hold your work. It is strongly encouraged that you don't call the folder something else. For Windows users who don't have access their root C drive folder, you can put the SenchaTraining folder inside your users folder or another location. 
 
 * Windows: C:\SenchaTraining\
 * Mac / Linux : ~/SenchaTraining/
@@ -151,7 +151,7 @@ $
 
 ```
 
-* Again, visit the following site [http://localhost:1841/helloworld/](http://localhost:1841/helloworld/) and ensure you can see the following:
+* Visit the following site [http://localhost:1841/helloworld/](http://localhost:1841/helloworld/) and ensure you can see the following:
 <img src="hello-world-works.jpg" align="center" />
 
 
@@ -184,7 +184,7 @@ sudo port install wine
 ```
 Note: the command above may run for 30 minutes or more. 
 
-If you don't have MacPorts install, I recommend you skip this step. [Installing Wine manually](https://www.winehq.org/download) without MacPorts can be a challenging process due to the number of dependencies. Not having completed this step will not impact your learning process. 
+If you don't have MacPorts installed, I recommend you skip this step. [Installing Wine manually](https://www.winehq.org/download) without MacPorts can be a challenging process due to the number of dependencies. Not having completed this step will not impact your learning process. 
 
 
 ## Troubleshooting
