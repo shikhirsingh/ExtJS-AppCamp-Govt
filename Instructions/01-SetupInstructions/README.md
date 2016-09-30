@@ -16,7 +16,7 @@ You are free to use any IDE you wish. If you don't have one, consider downloadin
 
 ## Step 3: Obtain Ext JS Trial or Commercial
 
-1. Download the Trial version of Ext JS 6.2 from [here](https://www.sencha.com/products/extjs/evaluate/). You will get an email which contains the link to Ext JS 6. If you already own an Ext JS 6.2 license, please download it from [support.sencha.com](support.sencha.com) using your credentials 
+1. Download the Trial version of Ext JS 6.2 from [here](https://www.sencha.com/products/extjs/evaluate/). You will get an email which contains the link to Ext JS 6. If you already own an Ext JS 6.2 license, please download it from [support.sencha.com](http://support.sencha.com) using your credentials 
 2. Unzip the SDK into the SenchaTraining folder and change the SDK folder's name to ext. 
 
 WARNING: When you unzip the folder, it will unzip as ext-6.2.x, you will need to rename it to ext
@@ -71,8 +71,8 @@ ext.dir=${workspace.dir}/ext
 
 ## Step 5: Install Ext JS Premium Addons
 
-1. In Step 2, we received an email upon completing the Ext JS form for Ext JS Trial which contained the link for Ext JS. This email also contains the link for "Pivot Grid, D3 Adapter, Calendar, and Exporter add-ons". Please download the addons. If you have an Ext JS Premium license, you can download the adds from the [Support Portal](). The addons are called "Ext Premium Addons".
-2. After you unzip the file, copy only the folders located inside of the packages subdirectory into the SenchaTraining/packages directory.
+1. In Step 2, we received an email upon completing the Ext JS form for Ext JS Trial which contained the link for Ext JS. This email also contains the link for "Pivot Grid, D3 Adapter, Calendar, and Exporter add-ons". Please download the addons. If you have an Ext JS Premium license, you can download the adds from the [Support Portal](http://support.sencha.com). The addons are called "Ext Premium Addons" and available under the Downlaod section of the site.
+2. After you unzip the file, copy only the folders located inside of the packages subdirectory of the extracted file into the SenchaTraining/packages directory.
 
 After completing this step, you folder structure should look like this
 
@@ -105,7 +105,7 @@ Sencha Cmd v6.2.0.103
 [INF] Server started at port : 1841
 
 ```
-* Do not close this Terminal / Command Prompt window until you are done with Step 7
+* Do not close this Terminal / Command Prompt window until you are done with the Setup Instructions. You may wish to minimize this window to avoid accidently closing this window. 
 
 * Now visit the following site [http://localhost:1841/](http://localhost:1841) and ensure you can see the following:
 <img src="correct_setup.jpg" align="center" />
@@ -163,7 +163,18 @@ $
 
 * Download and Install Chrome from [here](https://www.google.com/intl/en/chrome/). We will need Google Chrome for debugging our apps.
 
-## Step 10: (Optional) macOS and Linux users only - Install Wine
+## Step 10 (Optional): Install Cordova
+
+This step is optional if you are not interested in learning how to package your app for mobile devices. 
+
+* Download and install [Android Studio](https://developer.android.com/studio/install.html)
+* Run the following command from Terminal or Command Prompt
+
+```
+npm install -g cordova
+```
+
+## Step 11 (Optional): macOS and Linux users only - Install Wine
 
 This step is optional if you wish to learn how to package your Ext JS apps to create an executable binary (.exe files) for Windows. If you choose not to follow this step, you will still be able to package your apps for macOS(.app files).
 
@@ -173,7 +184,7 @@ sudo port install wine
 ```
 Note: the command above may run for 30 minutes or more. 
 
-If you don't have MacPorts install, I recommend you skip this step. Installing Wine can be a challenging process due to the number of dependencies it has. Homebrew can also be used to install Wine.
+If you don't have MacPorts install, I recommend you skip this step. [Installing Wine manually](https://www.winehq.org/download) without MacPorts can be a challenging process due to the number of dependencies. Not having completed this step will not impact your learning process. 
 
 
 ## Troubleshooting
