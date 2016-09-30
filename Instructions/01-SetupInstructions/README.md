@@ -10,8 +10,8 @@ You are free to use any IDE you wish. If you don't have one, consider downloadin
 
 **Create a folder to hold your work**
 
-* Windows: C:\SenchaTraining\labs
-* Mac / Linux : ~/SenchaTraining/labs
+* Windows: C:\SenchaTraining\
+* Mac / Linux : ~/SenchaTraining/
 
 
 ## Step 3: Obtain Ext JS Trial or Commercial
@@ -26,7 +26,6 @@ When you are done, your folder structure will look like this:
 ```
 SenchaTraining/
 ├── ext 
-├── labs/
 ```
 
 ## Step 4: Install Sencha Cmd 6.2+
@@ -51,7 +50,6 @@ After running command above, SenchaTraining folder should look like this
 ```
 SenchaTraining/
 ├── ext/
-├── labs/
 ├── packages/
 ├── workspace.json
 
@@ -68,7 +66,6 @@ After completing this step, you folder structure should look like this
 ```
 SenchaTraining/
 ├── ext/
-├── labs/
 ├── packages/
     ├── calendar/
     ├── d3/
@@ -97,7 +94,7 @@ Sencha Cmd v6.2.0.103
 ```
 
 * Now visit the following site [http://localhost:1841/](http://localhost:1841) and ensure you can see the following:
-<img src="browser_correct_setup.jpg" align="center" />
+<img src="correct_setup.jpg" align="center" />
 
 * After you click on the ext folder. You should see the following:
 
