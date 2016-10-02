@@ -116,43 +116,16 @@ Sencha Cmd v6.2.0.103
 
 ## Step 7: HelloWorld Test
 
-* In the SenchaTraining folder, type in the following in terminal / Command Prompt
+* In the SenchaTraining folder, type in the following three commands in terminal / Command Prompt
 
 ```
-sencha -sdk ./ext generate app -modern HelloWorld helloworld
+sencha -sdk ext/ generate app -starter=false -modern ITdashboard itdashboard
+cd itdashboard
+sencha app build development
 ```
 
-* After you run this step, you should see output that looks like this
-```
-$ sencha -sdk ./ext generate app -modern HelloWorld helloworld
-Sencha Cmd v6.2.0.103
-[INF] Processing Build Descriptor : default
-[INF] Loading app json manifest...
-[INF] Appending content to /Users/shikhir/SenchaTraining/helloworld/bootstrap.js
-[INF] Writing content to /Users/shikhir/SenchaTraining/helloworld/bootstrap.json
-[INF] merging 375 input resources into /Users/shikhir/SenchaTraining/build/development/HelloWorld/resources
-[INF] merged 375 resources into /Users/shikhir/SenchaTraining/build/development/HelloWorld/resources
-[INF] merging 17 input resources into /Users/shikhir/SenchaTraining/build/development/HelloWorld
-[INF] merged 17 resources into /Users/shikhir/SenchaTraining/build/development/HelloWorld
-[INF] Writing content to /Users/shikhir/SenchaTraining/helloworld/sass/example/bootstrap.json
-[INF] Writing content to /Users/shikhir/SenchaTraining/helloworld/sass/example/bootstrap.js
-[INF] writing sass content to /Users/shikhir/SenchaTraining/build/temp/development/HelloWorld/sass/HelloWorld-all.scss.tmp
-[INF] appending sass content to /Users/shikhir/SenchaTraining/build/temp/development/HelloWorld/sass/HelloWorld-all.scss.tmp
-[INF] appending sass content to /Users/shikhir/SenchaTraining/build/temp/development/HelloWorld/sass/HelloWorld-all.scss.tmp
-[INF] writing sass content to /Users/shikhir/SenchaTraining/build/temp/development/HelloWorld/sass/config.rb
-[INF] Writing content to /Users/shikhir/SenchaTraining/build/development/HelloWorld/app.json
-[LOG] Building /Users/shikhir/SenchaTraining/build/temp/development/HelloWorld/sass/HelloWorld-all.scss
-Exiting with code 0
-[INF] Appending content to /Users/shikhir/SenchaTraining/helloworld/bootstrap.js
-[INF] Writing content to /Users/shikhir/SenchaTraining/helloworld/bootstrap.json
-[INF] Adding application to workspace.json
-
-$ 
-
-```
-
-* Visit the following site [http://localhost:1841/helloworld/](http://localhost:1841/helloworld/) and ensure you can see the following:
-<img src="hello-world-works.jpg" align="center" />
+* Visit the following site [http://localhost:1841/itdashboard/](http://localhost:1841/itdashboard/) and ensure you can see the following:
+<img src="hello-extjs.jpg" align="center" />
 
 
 ## Step 8: Install Node.js

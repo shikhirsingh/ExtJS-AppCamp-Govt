@@ -1,22 +1,13 @@
-# App Camp - LAB 1
+# App Camp - LAB 2
 
 In this lab, we will create an empty Ext JS project
 
-## Step 1: Generate an empty project
 
-In this step, we will generate an empty app so that we can being the new project. We will need to do this in the SenchaTraining folder:
+## Step 1: Start the Sencha Web Server with Hot Reload
 
-``` 
-sencha -sdk ext/ generate app -starter=false -modern ITdashboard itdashboard
-```
-
-
-## Step 2: Start the Sencha Web Server with Hot Reload
-
-In a separate Command Prompt or Terminal window run the following command in the SenchaTraining/itdashboard folder:
+If you have "sencha web start" command running, close it and in a separate Command Prompt or Terminal window run the following command in the SenchaTraining/itdashboard folder:
 
 ```
-cd itdashboard
 sencha app watch
 ```
 
@@ -60,5 +51,89 @@ You should see the following:
 
 <img src="hello-extjs.jpg" align="center" />
 
+## Step 4: Add Containers
+
+* Open the following line of file in your IDE: SenchaTraining/itdashboard/app.js
+* Remove the line inside the launch function (line #9)
+* Paste this inside the launch function
+
+```
+		Ext.Viewport.add(
+			{
+				xtype: 'container',
+				id: 'root',
+				// layout: 'vbox',
+				items: [
+					{
+						xtype: 'container', 
+						html: 'A red Container',
+						// flex:1,						
+                        style: 'background-color: red; color: white', 
+						title: "red",
+
+					},
+					{
+						xtype: 'container', 
+						html: 'A green Container',
+                        // flex: 1,
+						style: 'background: green; color:white'
+					},
+					{
+						xtype: 'container', 
+						html: 'A Purple Container',
+						// flex: 1,
+                        style: 'background: purple; color: white'
+					}					
+					
+				]
+			}
+		);
+```
+* Save the file and revisit the site [http://localhost:1841](http://localhost:1841/itdashboard/) in Google Chrome. It should look like below:
+
+<img src="container-default.jpg" align="center" />
 
 
+## Step 5: Understand layout
+
+* Uncomment the "layout" property
+* Uncomment the three lines that contain the "flex" properties
+* Save the file and revisit the site [http://localhost:1841](http://localhost:1841/itdashboard/) in Google Chrome. It should look like below:
+
+<img src="vbox-flex1.jpg" align="center" />
+
+* Change the "layout" property to 'hbox' from 'vbox'. Save the file and revisit the site [http://localhost:1841](http://localhost:1841/itdashboard/) in Google Chrome. It should look like below:
+
+<img src="hbox.jpg" align="center" />
+
+## Step 6: understanding the card layout
+* Change the layout to 'card' and go to the JavaScript console (menu under View > Developer > JavaScript console)
+* In the console, type in the following
+
+```
+Ext.getCmp('root').setActiveItem(1); // now change the values to 0, 1, 2 in the function
+```
+* Change the "layout" property back to 'hbox' from 'card'
+
+## Step 7: Undstanding flex and width
+
+* The value of the "flex" property for all the containers is set to one. Change the value of flex for the the middle container to 3. Notice how the middle container doubled in size.
+
+<img src="flex-3.jpg" align="center" />
+
+* Change the size of the browser. Notice how the ratios of the width of each container stays the same
+* Now comment out the middle container's flex property
+* Add a new "width" property with a value of '200px'. So your middle container should look like this:
+```
+					{
+						xtype: 'container', 
+						html: 'A green Container',
+						//flex: 3,
+						width: '100px',
+						style: 'background: green; color:white'
+					},
+
+```
+ 
+* Change the size of the browser window and note how the two edge containers change size although the middle container now stays fixed
+  
