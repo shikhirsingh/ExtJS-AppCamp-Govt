@@ -1,11 +1,11 @@
 # App Camp - LAB 2
 
-In this lab, we will create an empty Ext JS project
+In this lab, we will get an introduction to layouts and containers
 
 
-## Step 1: Start the Sencha Web Server with Hot Reload
+## Step 1: Start the Sencha Web Server with Live Reload
 
-If you have "sencha web start" command running, close it and in a separate Command Prompt or Terminal window run the following command in the SenchaTraining/itdashboard folder:
+If you have "sencha web start" command running, close it and in a separate Command Prompt or Terminal window run the following command in the SenchaTraining/appcamp folder:
 
 ```
 sencha app watch
@@ -22,22 +22,22 @@ Sencha Cmd v6.2.0.103
 [INF] Server started at port : 1841
 [INF] Application available at http://localhost:1841
 [INF] Loading app json manifest...
-[INF] Appending content to /Users/shikhir/SenchaTraining/itdashboard/bootstrap.js
-[INF] Writing content to /Users/shikhir/SenchaTraining/itdashboard/bootstrap.json
-[INF] merging 375 input resources into /Users/shikhir/SenchaTraining/build/development/ITdashboard/resources
-[INF] merged 1 resources into /Users/shikhir/SenchaTraining/build/development/ITdashboard/resources
-[INF] merging 17 input resources into /Users/shikhir/SenchaTraining/build/development/ITdashboard
-[INF] merged 1 resources into /Users/shikhir/SenchaTraining/build/development/ITdashboard
-[INF] Writing content to /Users/shikhir/SenchaTraining/itdashboard/sass/example/bootstrap.json
-[INF] Writing content to /Users/shikhir/SenchaTraining/itdashboard/sass/example/bootstrap.js
-[INF] writing sass content to /Users/shikhir/SenchaTraining/build/temp/development/ITdashboard/sass/ITdashboard-all.scss.tmp
-[INF] appending sass content to /Users/shikhir/SenchaTraining/build/temp/development/ITdashboard/sass/ITdashboard-all.scss.tmp
-[INF] appending sass content to /Users/shikhir/SenchaTraining/build/temp/development/ITdashboard/sass/ITdashboard-all.scss.tmp
-[INF] Writing content to /Users/shikhir/SenchaTraining/build/development/ITdashboard/app.json
-[LOG] Building /Users/shikhir/SenchaTraining/build/temp/development/ITdashboard/sass/ITdashboard-all.scss
+[INF] Appending content to /Users/shikhir/SenchaTraining/appcamp/bootstrap.js
+[INF] Writing content to /Users/shikhir/SenchaTraining/appcamp/bootstrap.json
+[INF] merging 375 input resources into /Users/shikhir/SenchaTraining/build/development/AppCamp/resources
+[INF] merged 1 resources into /Users/shikhir/SenchaTraining/build/development/AppCamp/resources
+[INF] merging 17 input resources into /Users/shikhir/SenchaTraining/build/development/AppCamp
+[INF] merged 1 resources into /Users/shikhir/SenchaTraining/build/development/AppCamp
+[INF] Writing content to /Users/shikhir/SenchaTraining/appcamp/sass/example/bootstrap.json
+[INF] Writing content to /Users/shikhir/SenchaTraining/appcamp/sass/example/bootstrap.js
+[INF] writing sass content to /Users/shikhir/SenchaTraining/build/temp/development/AppCamp/sass/AppCamp-all.scss.tmp
+[INF] appending sass content to /Users/shikhir/SenchaTraining/build/temp/development/AppCamp/sass/AppCamp-all.scss.tmp
+[INF] appending sass content to /Users/shikhir/SenchaTraining/build/temp/development/AppCamp/sass/AppCamp-all.scss.tmp
+[INF] Writing content to /Users/shikhir/SenchaTraining/build/development/AppCamp/app.json
+[LOG] Building /Users/shikhir/SenchaTraining/build/temp/development/AppCamp/sass/AppCamp-all.scss
 Exiting with code 0
-[INF] Appending content to /Users/shikhir/SenchaTraining/itdashboard/bootstrap.js
-[INF] Writing content to /Users/shikhir/SenchaTraining/itdashboard/bootstrap.json
+[INF] Appending content to /Users/shikhir/SenchaTraining/appcamp/bootstrap.js
+[INF] Writing content to /Users/shikhir/SenchaTraining/appcamp/bootstrap.json
 [INF] Waiting for changes...
 ```
 
@@ -45,7 +45,7 @@ We will need to keep this Command Prompt or Terminal window open for the rest of
 
 ## Step 3: Test your App
 
-* Visit [http://localhost:1841](http://localhost:1841/itdashboard/)
+* Visit [http://localhost:1841](http://localhost:1841/appcamp/)
 
 You should see the following:
 
@@ -53,7 +53,7 @@ You should see the following:
 
 ## Step 4: Add Containers
 
-* Open the following line of file in your IDE: SenchaTraining/itdashboard/app.js
+* Open the following line of file in your IDE: SenchaTraining/appcamp/app.js
 * Remove the line inside the launch function (line #9)
 * Paste this inside the launch function
 
@@ -67,7 +67,7 @@ You should see the following:
 					{
 						xtype: 'container', 
 						html: 'A red Container',
-						// flex:1,						
+						// flex: 1,						
                         style: 'background-color: red; color: white', 
 						title: "red",
 
@@ -89,20 +89,20 @@ You should see the following:
 			}
 		);
 ```
-* Save the file and revisit the site [http://localhost:1841](http://localhost:1841/itdashboard/) in Google Chrome. It should look like below:
-
+* Save the file and revisit the site [http://localhost:1841](http://localhost:1841/appcamp/) in Google Chrome. It should look like below:
 <img src="container-default.jpg" align="center" />
 
+* At the end of this step, your app.js file should look like [this](step4.js)
 
 ## Step 5: Understand layout
 
 * Uncomment the "layout" property
 * Uncomment the three lines that contain the "flex" properties
-* Save the file and revisit the site [http://localhost:1841](http://localhost:1841/itdashboard/) in Google Chrome. It should look like below:
+* Save the file and revisit the site [http://localhost:1841](http://localhost:1841/appcamp/) in Google Chrome. It should look like below:
 
 <img src="vbox-flex1.jpg" align="center" />
 
-* Change the "layout" property to 'hbox' from 'vbox'. Save the file and revisit the site [http://localhost:1841](http://localhost:1841/itdashboard/) in Google Chrome. It should look like below:
+* Change the "layout" property to 'hbox' from 'vbox'. Save the file and revisit the site [http://localhost:1841](http://localhost:1841/appcamp/) in Google Chrome. It should look like below:
 
 <img src="hbox.jpg" align="center" />
 
@@ -113,6 +113,10 @@ You should see the following:
 ```
 Ext.getCmp('root').setActiveItem(1); // now change the values to 0, 1, 2 in the function
 ```
+* Change the values inside setActive item to 2
+* Change the values inside setActive item to 0
+
+
 * Change the "layout" property back to 'hbox' from 'card'
 
 ## Step 7: Undstanding flex and width
@@ -136,4 +140,4 @@ Ext.getCmp('root').setActiveItem(1); // now change the values to 0, 1, 2 in the 
 ```
  
 * Change the size of the browser window and note how the two edge containers change size although the middle container now stays fixed
-  
+* At the end of this step, your app.js file should look like [this](step7.js)

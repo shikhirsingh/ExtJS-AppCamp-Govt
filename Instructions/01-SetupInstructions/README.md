@@ -52,7 +52,6 @@ SenchaTraining/
 ├── ext/
 ├── packages/
 ├── workspace.json
-
 ```
 
 * Now we will need to open the SenchaTraining/workspace.json file and search it to ensure that the "frameworks" property is set to ext. If it is not included, please add the following in the workspace.json file on line 2:
@@ -119,8 +118,8 @@ Sencha Cmd v6.2.0.103
 * In the SenchaTraining folder, type in the following three commands in terminal / Command Prompt
 
 ```
-sencha -sdk ext/ generate app -starter=false -modern ITdashboard itdashboard
-cd itdashboard
+sencha -sdk ext/ generate app -starter=false -modern AppCamp appcamp
+cd appcamp
 sencha app build development
 ```
 

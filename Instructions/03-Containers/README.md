@@ -1,61 +1,97 @@
-# App Camp - LAB 2
+# App Camp - LAB 3
 
-In this lab, we will create an empty Ext JS project
-
-## Step 1: Generate an empty project
-
-In this step, we will generate an empty app so that we can being the new project. We will need to do this in the SenchaTraining folder:
-
-``` 
-sencha -sdk ext/ generate app -starter=false -modern ITdashboard itdashboard
-```
+In this lab, we will create a common application layout template
 
 
-## Step 2: Start the Sencha Web Server with Hot Reload
+## Step 1: Update app.js and Application.js
 
-In a separate Command Prompt or Terminal window run the following command in the SenchaTraining/itdashboard folder:
+* Let's edit app.js and replace it's entire content with the following
+
 
 ```
-sencha app watch
+Ext.application({
+	name: 'AppCamp',
+	extend: 'AppCamp.Application'
+});
 ```
 
-If your web-server starts correctly, you should see this:
+* create directory called app in the appcamp directory
+* In the newly created appcamp/app directory, create a file called Application.js and paste the following into it's contents
+
 ```
-$ sencha app watch
-Sencha Cmd v6.2.0.103
-[INF] Processing Build Descriptor : default
-[INF] Starting server on port : 1841
-[INF] Mapping http://localhost:1841/~cmd to /Users/shikhir/bin/Sencha/Cmd/6.2.0.103...
-[INF] Mapping http://localhost:1841/ to /Users/shikhir/SenchaTraining...
-[INF] Server started at port : 1841
-[INF] Application available at http://localhost:1841
-[INF] Loading app json manifest...
-[INF] Appending content to /Users/shikhir/SenchaTraining/itdashboard/bootstrap.js
-[INF] Writing content to /Users/shikhir/SenchaTraining/itdashboard/bootstrap.json
-[INF] merging 375 input resources into /Users/shikhir/SenchaTraining/build/development/ITdashboard/resources
-[INF] merged 1 resources into /Users/shikhir/SenchaTraining/build/development/ITdashboard/resources
-[INF] merging 17 input resources into /Users/shikhir/SenchaTraining/build/development/ITdashboard
-[INF] merged 1 resources into /Users/shikhir/SenchaTraining/build/development/ITdashboard
-[INF] Writing content to /Users/shikhir/SenchaTraining/itdashboard/sass/example/bootstrap.json
-[INF] Writing content to /Users/shikhir/SenchaTraining/itdashboard/sass/example/bootstrap.js
-[INF] writing sass content to /Users/shikhir/SenchaTraining/build/temp/development/ITdashboard/sass/ITdashboard-all.scss.tmp
-[INF] appending sass content to /Users/shikhir/SenchaTraining/build/temp/development/ITdashboard/sass/ITdashboard-all.scss.tmp
-[INF] appending sass content to /Users/shikhir/SenchaTraining/build/temp/development/ITdashboard/sass/ITdashboard-all.scss.tmp
-[INF] Writing content to /Users/shikhir/SenchaTraining/build/development/ITdashboard/app.json
-[LOG] Building /Users/shikhir/SenchaTraining/build/temp/development/ITdashboard/sass/ITdashboard-all.scss
-Exiting with code 0
-[INF] Appending content to /Users/shikhir/SenchaTraining/itdashboard/bootstrap.js
-[INF] Writing content to /Users/shikhir/SenchaTraining/itdashboard/bootstrap.json
-[INF] Waiting for changes...
+Ext.define('AppCamp.Application', {
+	extend: 'Ext.app.Application',
+	name: 'AppCamp',
+
+	launch: function () {
+		Ext.Viewport.add(
+			{
+				xtype: 'container',
+				layout: 'hbox',
+				items: [
+					{
+						xtype: 'container', 
+						html: 'sidebarview',
+						width: 225,
+						style: { 'color': 'white', 'background': 'linear-gradient(to bottom right, #000 0%, #3f729b 100%)'} 
+					},
+					{
+						xtype: 'container', 
+						flex: 1, 
+						layout: 'hbox',
+						items: [
+							{
+								xtype: 'toolbar', 
+								title: 'headerview',
+								docked: 'top', 
+								height: 50,
+								style: { 'color': 'black', 'box-shadow': '0 0 10px rgba(51, 51, 51, 0.4)', 'background': '#EDEDED' } 
+							},
+							{
+								xtype: 'navigationview', 
+								html: 'centerview',
+								flex: 1, 
+								navigationBar: false, 
+								style: { 'background': '#f1f5f6' } 
+							},
+							{
+								xtype: 'container',
+								html: 'detailview',
+								width: 70,
+								hidden: false,
+								style: { 'background': '#EDEDED'} 
+							},
+							{ 
+								xtype: 'toolbar',
+								html: 'footerview',
+								height: 30,
+								docked: 'bottom', 
+								style: { 'color': 'white', 'background': 'linear-gradient(to right, #3f729b 0%, #000 100%)' } 
+							}
+						]
+					}
+				]
+			}
+		);
+	},
+
+	onAppUpdate: function () {
+			Ext.Msg.confirm('Application Update', 'This application has an update, reload?',
+					function (choice) {
+							if (choice === 'yes') {
+									window.location.reload();
+							}
+					}
+			);
+	}
+});
 ```
 
-We will need to keep this Command Prompt or Terminal window open for the rest of the App Camp. Minimize this window and don't close it for the remainder of the AppCamp
 
 ## Step 3: Test your App
 
-* Visit [http://localhost:1841](http://localhost:1841/itdashboard/)
+* Visit [http://localhost:1841](http://localhost:1841/appcamp/)
 
 You should see the following:
 
 <img src="hello-extjs.jpg" align="center" />
-
