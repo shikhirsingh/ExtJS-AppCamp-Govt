@@ -255,3 +255,10 @@ We now need to reference these files
 
 We should have something that looks like this:
 <img src="sidebar-part1.jpg" align="center" />
+
+
+# Files
+
+Your files should look like this at then end of this lab
+
+<a href="app/"> Files</a>
