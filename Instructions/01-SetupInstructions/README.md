@@ -123,7 +123,7 @@ cd appcamp
 sencha app build development
 ```
 
-* Visit the following site [http://localhost:1841/itdashboard/](http://localhost:1841/itdashboard/) and ensure you can see the following:
+* Visit the following site [http://localhost:1841/appcamp/](http://localhost:1841/appcamp/) and ensure you can see the following:
 <img src="hello-extjs.jpg" align="center" />
 
 
