@@ -45,6 +45,7 @@ Ext.define('AppCamp.view.main.MainView',{
         'AppCamp.view.main.HeaderView',
         'AppCamp.view.main.CenterView',
         'AppCamp.view.main.FooterView',
+        //'AppCamp.view.main.MainViewController',
         'AppCamp.view.main.DetailView'
     ],
 
@@ -233,20 +234,31 @@ Ext.define('AppCamp.view.main.ActionView',{
 * Create a the file app/view/main/MenuView.js with the following content
 ```
 Ext.define('AppCamp.view.main.MenuView',{
-	extend: 'Ext.list.Tree',
-	xtype: 'menuview',
-	reference: 'menuview',
-	cls: 'menuview',
-	requires: [
-		'Ext.data.TreeStore'
-	],
-	
+    extend: 'Ext.list.Tree',
+    xtype: 'menuview',
+    reference: 'menuview',
+    cls: 'menuview',
+    requires: [
+       // 'AppCamp.view.main.MenuViewModel',
+        'Ext.data.TreeStore'
+    ],
+
 	ui: 'navigation',
 	expanderFirst: false,
-	expanderOnly: false,
-		listeners: {
-		// selectionchange: 'onMenuViewSelectionChange'
-	}
+	expanderOnly: false
+    /*
+    listeners: {
+		//selectionchange: 'onMenuViewSelectionChange'
+	},
+
+    viewModel: {
+        type: 'main-menuview'
+    },
+
+    bind: {
+        store: '{sidemenu}'
+    }
+    */
 });
 ```
 
@@ -261,4 +273,4 @@ We should have something that looks like this:
 
 Your files should look like this at then end of this lab
 
-<a href="app/"> Files</a>
+<a href="app/" target="_blank"> Files</a>

@@ -4,20 +4,18 @@ Ext.define('AppCamp.view.main.MenuView',{
     reference: 'menuview',
     cls: 'menuview',
     requires: [
-       // 'AppCamp.view.main.MenuViewController',
-       // 'AppCamp.view.main.MenuViewModel',
+        'AppCamp.view.main.MenuViewModel',
         'Ext.data.TreeStore'
     ],
 
 	ui: 'navigation',
 	expanderFirst: false,
-	expanderOnly: false
-    /*
+	expanderOnly: false,
+    
     listeners: {
-		//selectionchange: 'onMenuViewSelectionChange'
+		selectionchange: 'onMenuViewSelectionChange'
 	},
 
-    controller: 'main-menuview',
     viewModel: {
         type: 'main-menuview'
     },
@@ -25,5 +23,4 @@ Ext.define('AppCamp.view.main.MenuView',{
     bind: {
         store: '{sidemenu}'
     }
-    */
 });
