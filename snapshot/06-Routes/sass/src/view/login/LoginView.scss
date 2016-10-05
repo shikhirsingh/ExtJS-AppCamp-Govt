@@ -1,0 +1,67 @@
+.loginview {
+	@include background-size(cover);
+	background-image: $auth-background-image;
+	background-position: center;
+	> .x-inner {
+		background-color: transparentize($auth-background-color, 0.5);
+	}
+
+	.x-formpanel {
+		width: 256px;
+		.x-button {
+			// Balance button vertical spacing with form fields
+			margin: $field-vertical-spacing/2 0;
+			.x-big {
+				margin: $field-vertical-spacing-big/2 0;
+			}
+		}
+	}
+
+	.loginviewheader,
+	.loginviewfooter {
+		color: $auth-color;
+		text-align: center;
+		padding: 1.5em;
+		a {
+			color: $auth-color;
+			text-decoration: none;
+		}
+	}
+
+	.loginviewheader {
+		.logo {
+			border-radius: 50%;
+			@include single-text-shadow;
+			color: $auth-color;
+			font-size: 3em;
+			line-height: 1;
+			opacity: 0.8;
+		}
+		.title, .caption {
+			white-space: nowrap;
+		}
+		.title {
+			font-size: 2.4em;
+			&::first-letter {
+				font-weight: bold;
+			}
+		}
+		.caption {
+			text-transform: uppercase;
+		}
+	}
+
+	.loginviewfooter {
+		.logo {
+			font-size: 1.6em;
+			margin-right: 0.1em;
+			margin-left: -0.5em;
+			&::before {
+				vertical-align: middle;
+			}
+		}
+		.label {
+			font-weight: bold;
+		}
+	}
+}

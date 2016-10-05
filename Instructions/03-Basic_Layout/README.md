@@ -22,6 +22,14 @@ Ext.application({
 Ext.define('AppCamp.Application', {
 	extend: 'Ext.app.Application',
 	name: 'AppCamp',
+	/*
+	requires: [
+		'AppCamp.view.main.MainView',
+		'AppCamp.store.MenuStore'
+	],   // the sub-namespace correspond to directory names you just created. "requires" are like #include in C++
+
+	stores:['MenuStore'],
+	*/
 
 	launch: function () {
 		Ext.Viewport.add(

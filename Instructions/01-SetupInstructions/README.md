@@ -4,7 +4,7 @@ Prior to attending the Ext JS App Camp, please follow the setup instructions bel
 
 ## Step 1: Obtain a Text editor or IDE
 
-You are free to use any IDE you wish. If you don't have one, consider downloading [Visual Studio Code](http://code.visualstudio.com/) which works on macOS, Linux, or Windows. Other good options include Visual Studio, Eclipse, and WebStorm. Please avoid using Notepad. 
+You are free to use any IDE you wish. If you don't have one, consider downloading [Visual Studio Code](http://code.visualstudio.com/) which works on macOS, Linux, or Windows. Other good options include Visual Studio, Eclipse, and WebStorm. Notepad is strongly discouraged. 
 
 ## Step 2: Create the Course Folder
 
@@ -70,7 +70,7 @@ ext.dir=${workspace.dir}/ext
 
 ## Step 5: Install Ext JS Premium Addons
 
-1. In Step 2, we received an email from downloads@sencha.com upon completing the form to download Ext JS Trial which contained the link for Ext JS 6 Trial. This email also contains the link for "Pivot Grid, D3 Adapter, Calendar, and Exporter add-ons". Please download the addons. If you have an Ext JS Premium license, you can download the Addons from the [Support Portal](http://support.sencha.com). The addons in the Support Portal are called "Ext Premium Addons" and available under the Downlaod section of the site.
+1. In Step 2, we received an email from downloads@sencha.com upon completing the form to download Ext JS Trial which contained the link for Ext JS 6 Trial. This email also contains the link for "Pivot Grid, D3 Adapter, Calendar, and Exporter add-ons". Please download the addons. If you have an Ext JS Premium license, you can download the Addons from the [Support Portal](http://support.sencha.com). The addons in the Support Portal are called "Ext Premium Addons" and available under the Download section of the site.
 2. After you unzip the file, copy only the folders located inside of the packages subdirectory of the newly extracted file into the SenchaTraining/packages directory.
 
 After completing this step, you folder structure should look like this
@@ -105,7 +105,6 @@ Sencha Cmd v6.2.0.103
 
 ```
 Troubleshooting: If the sencha command is not found, open a new terminal or command prompt window and try again. 
-Troubleshooting: If you already have something running on port 1841, Sencha Cmd will choose another port. Remainder of instructions refer to port 1841, please substitute port in browser
 
 * Do not close this Terminal / Command Prompt window until you are done with the Setup Instructions. You may wish to minimize this window to avoid accidently closing this window. 
 
@@ -166,5 +165,6 @@ If you don't have MacPorts installed, I recommend you skip this step as it's opt
 
 ## Troubleshooting
 
-* Make sure you are executing the command in the correct directory. Nearly all issues are a result of this.
+* Make sure you are executing the command in the correct directory. Over 50% of issues are a result of this.
 * In some cases, you may need to close the Terminal or Command Prompt window and reopen it. This is done to ensure that all your installed software is loaded in the path.
+* If you already have something running on port 1841, Sencha Cmd will choose another port. Instructions refer to port 1841, please substitute port in browser 

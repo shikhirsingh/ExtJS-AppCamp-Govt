@@ -22,7 +22,7 @@ appcamp/
 ├── sass/
 ```
 
-## Step 2: Setup ViewModel and ViewController for MenuView
+## Step 2: Setup ViewModel for MenuView and ViewController for MainView
 
 * Uncomment all lines in the MenuView.js
 * Add a comma for the expanderOnly property
@@ -62,7 +62,7 @@ Ext.define('AppCamp.view.main.MainViewController', {
 	},
 /*
 	Route:function(xtype) {
-		var node = this.menuview.getStore().findNode('xtype', xtype);
+		var node=Ext.data.StoreManager.get('menustore').findNode('xtype', xtype);
 		item = this.centerview.child('component[xtype=' + xtype + ']');
 		if (!item) {
 				try {

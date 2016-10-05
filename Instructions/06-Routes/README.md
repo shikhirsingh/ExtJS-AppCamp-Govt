@@ -20,24 +20,10 @@ appcamp/
 ├── sass/
 ```
 
-## Step 2: Setup ViewModel and ViewController for MenuView
+## Step 2: Setup Routes
 
-* Uncomment all lines in the MenuView.js
-* Add a comma for the expanderOnly property
-* Create a ViewModel file appcamp/view/main/MenuViewModel.js with the following content
-```
-Ext.define('AppCamp.view.main.MenuViewModel', {
-    extend: 'Ext.app.ViewModel',
-    alias: 'viewmodel.main-menuview',
-    requires: 'AppCamp.store.MenuStore',
-    stores: {
-        sidemenu: {
-            type: 'menustore'
-        }
-    }
-});
-```
-
+* In SenchaTraining/app/Application.js, uncomment the "requires" and store properties
+* Remove any duplicate requires if they are present. You should have only one requires array.
 * Uncomment all comments from app/view/main/MainViewController.js 
 * Change the function onMenuViewSelection in the MainViewController.js to add new parameters: tree and node
 ```

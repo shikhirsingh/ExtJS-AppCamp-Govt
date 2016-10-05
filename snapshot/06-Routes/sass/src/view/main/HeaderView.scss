@@ -1,0 +1,15 @@
+.headerview { border-left: 0; border-top: 0; box-shadow: 0 0 10px rgba(51, 51, 51, 0.4); background-color: #EDEDED; }
+
+$nav-base-color: lighten(#191919, 10%);
+$nav-text-color: #bbb;
+
+@include button-ui(
+  $ui: 'navtoggle',
+  $background-color: transparent,
+	$icon-color: #000000,
+  $border-color: transparent
+  // $inner-border-color-focus: transparent,
+  // $inner-border-color-focus-over: transparent,
+  // $inner-border-color-focus-pressed: transparent,
+  // $background-color-over: $nav-base-color
+);
