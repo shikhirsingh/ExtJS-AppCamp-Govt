@@ -46,6 +46,7 @@ Ext.define('AppCamp.view.main.MenuViewModel', {
 Ext.define('AppCamp.view.main.MainViewController', {
 	extend: 'Ext.app.ViewController',
 	alias: 'controller.mainview',
+	//routes: { ':xtype': 'Route' },
 
 	init: function() {
 		var refs = this.getReferences();
@@ -56,17 +57,41 @@ Ext.define('AppCamp.view.main.MainViewController', {
 		this.centerview = refs.centerview;
 		this.detailview = refs.detailview;
 		this.footerview = refs.footerview;
+        //this.redirectTo( location.hash.slice(1), true );
+
 	},
+/*
+	Route:function(xtype) {
+		var node = this.menuview.getStore().findNode('xtype', xtype);
+		item = this.centerview.child('component[xtype=' + xtype + ']');
+		if (!item) {
+				try {
+					item = this.centerview.add({ xtype: xtype });
+				}
+				catch(ex) {
+					alert(ex);
+				}
+		}
+		this.menuview.setSelection(node);
+		this.centerview.setActiveItem(xtype);
+	},
+*/
 
 	onMenuViewSelectionChange: function () {
 		alert(node.get('xtype'));
+        /*
+		if (node.get('xtype') != undefined) {
+			this.redirectTo( node.get('xtype') );
+		}
+        */
+
 	}
 
 });
 ```
 
 * Uncomment all comments from appcamp/view/main/MainView.js
-* Visit [http://localhost:1841](http://localhost:1841/appcamp/), and notice there is no stying anymore. This is because the CSS variables are no longer present. 
+* Visit [http://localhost:1841](http://localhost:1841/appcamp/) 
 
 # Files
 

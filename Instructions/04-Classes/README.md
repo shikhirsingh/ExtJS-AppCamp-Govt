@@ -101,6 +101,7 @@ Ext.define('AppCamp.view.main.MainView',{
 Ext.define('AppCamp.view.main.SideBarView',{
 	extend: 'Ext.Container',
 	xtype: 'sidebarview',
+    reference: 'sidebarview',
 	cls: 'sidebarview', // css class defined in /appcamp/scss/src/view/main/SideBarView.scss
 	layout: 'vbox',
 
@@ -126,7 +127,7 @@ Ext.define('AppCamp.view.main.HeaderView',{
 	extend: 'Ext.Toolbar',
 	xtype: 'headerview',
 	cls: 'headerview', // css class defined in /appcamp/scss/src/view/main/HeaderView.scss
-	
+	reference: 'headerview',
 	// items: [
 	// 	{ xtype: 'container', html: '<a class="headertitle" >The United States Federal Agency IT Dashboard (2016)</a>' }
 	// ]
@@ -140,7 +141,7 @@ Ext.define('AppCamp.view.main.HeaderView',{
 Ext.define('AppCamp.view.main.CenterView',{
 	extend: 'Ext.navigation.View',
 	xtype: 'centerview',
-	html: 'centerview',
+	reference: 'centerview',
 	cls: 'centerview', // css class defined in /appcamp/scss/src/view/main/CenterView.scss
 	
 	navigationBar: false
@@ -152,6 +153,7 @@ Ext.define('AppCamp.view.main.CenterView',{
 Ext.define('AppCamp.view.main.DetailView',{
 	extend: 'Ext.Container',
 	xtype: 'detailview',
+    reference: 'detailview',
 	html: 'detailview',
 	cls: 'detailview'  // css class defined in /appcamp/scss/src/view/main/DetailView.scss
 });
@@ -162,6 +164,7 @@ Ext.define('AppCamp.view.main.DetailView',{
 Ext.define('AppCamp.view.main.FooterView',{
 	extend: 'Ext.Container',
 	xtype: 'footerview',
+    reference: 'footerview',
 	cls: 'footerview',  // css class defined in /appcamp/scss/src/view/main/FooterView.scss
 	
 	// items: [

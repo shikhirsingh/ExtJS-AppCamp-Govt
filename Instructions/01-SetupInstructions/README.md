@@ -54,7 +54,7 @@ SenchaTraining/
 ├── workspace.json
 ```
 
-* Now we will need to open the SenchaTraining/workspace.json file and search it to ensure that the "frameworks" property is set to ext. If it is not included, please add the following in the workspace.json file on line 2:
+* Now we will need to open the SenchaTraining/workspace.json file and search it to ensure that the "frameworks" property is set to ext. If the "frameworks" property is not included, please add the following lines in the workspace.json file on line 2:
 ```
     "frameworks": {
         "ext": {
@@ -104,6 +104,9 @@ Sencha Cmd v6.2.0.103
 [INF] Server started at port : 1841
 
 ```
+Troubleshooting: If the sencha command is not found, open a new terminal or command prompt window and try again. 
+Troubleshooting: If you already have something running on port 1841, Sencha Cmd will choose another port. Remainder of instructions refer to port 1841, please substitute port in browser
+
 * Do not close this Terminal / Command Prompt window until you are done with the Setup Instructions. You may wish to minimize this window to avoid accidently closing this window. 
 
 * Now visit the following site [http://localhost:1841/](http://localhost:1841) and ensure you can see the following:
@@ -118,10 +121,11 @@ Sencha Cmd v6.2.0.103
 * In the SenchaTraining folder, type in the following three commands in terminal / Command Prompt
 
 ```
-sencha -sdk ext/ generate app -starter=false -modern AppCamp appcamp
+sencha -sdk ext generate app -starter=false -modern AppCamp appcamp
 cd appcamp
 sencha app build development
 ```
+Troubleshooting: Make sure you have a SenchaTraining/ext directory. If you don't, re-check step 3. 
 
 * Visit the following site [http://localhost:1841/appcamp/](http://localhost:1841/appcamp/) and ensure you can see the following:
 <img src="hello-extjs.jpg" align="center" />
@@ -140,11 +144,12 @@ sencha app build development
 This step is optional. We will be covering how to package your apps for mobile devices. Some students who aren't interested in this just prefer to watch and therefore do not need this installed.
 
 * Download and install [Android Studio](https://developer.android.com/studio/install.html) or the [Android Command Line Tools](https://developer.android.com/studio/index.html) (which is much smaller)
-* Run the following command from Terminal or Command Prompt
+* Run the following command from a new Terminal or Command Prompt window
 
 ```
 npm install -g cordova
 ```
+If npm is not found, please open a new terminal or commmand prompt window and try again
 
 ## Step 11 (Optional): macOS and Linux attendees only - Install Wine
 
@@ -154,12 +159,12 @@ This step is optional.  If you wish to learn how to package your Ext JS apps on 
 ```
 sudo port install wine
 ```
-Note: the command above may run for 30 minutes or more. 
+Note: the command above may run for 30 minutes or more depending on your internet connection speed
 
-If you don't have MacPorts installed, I recommend you skip this step. [Installing Wine manually](https://www.winehq.org/download) without MacPorts can be a challenging process due to the number of dependencies. Not having completed this step will not impact your learning process. 
+If you don't have MacPorts installed, I recommend you skip this step as it's optional. [Installing Wine manually](https://www.winehq.org/download) without MacPorts can be a challenging process for some due to the number of dependencies. Not having completed this step will not impact your learning process. 
 
 
 ## Troubleshooting
 
 * Make sure you are executing the command in the correct directory. Nearly all issues are a result of this.
-* In some cases, you may need to close the Terminal or Command Prompt window and reopen it. This is ensure that all your installed software is loaded in the path.
+* In some cases, you may need to close the Terminal or Command Prompt window and reopen it. This is done to ensure that all your installed software is loaded in the path.
