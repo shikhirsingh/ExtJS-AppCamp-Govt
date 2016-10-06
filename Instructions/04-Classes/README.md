@@ -51,7 +51,6 @@ Ext.define('AppCamp.view.main.MainView',{
 
 	//reference: 'mainview',   // TO BE DEFINED LATER
 	//controller: 'mainview',
-	//viewModel: 'mainview',
 	items: [
 		{
 			xtype: 'sidebarview', 
