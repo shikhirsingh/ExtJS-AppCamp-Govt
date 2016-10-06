@@ -102,4 +102,4 @@ Ext.define('AppCamp.Application', {
 
 You should see the following:
 
-<img src="hello-extjs.jpg" align="center" />
+<img src="layout-template.jpg" align="center" />

@@ -116,18 +116,16 @@ Ext.getCmp('root').setActiveItem(1); // now change the values to 0, 1, 2 in the 
 * Change the values inside setActive item to 2
 * Change the values inside setActive item to 0
 
-
-* Change the "layout" property back to 'hbox' from 'card'
-
 ## Step 7: Undstanding flex and width
 
+* Change the "layout" property in app.js back to 'hbox' from 'card'
 * The value of the "flex" property for all the containers is set to one. Change the value of flex for the the middle container to 3. Notice how the middle container doubled in size.
 
 <img src="flex-3.jpg" align="center" />
 
 * Change the size of the browser. Notice how the ratios of the width of each container stays the same
 * Now comment out the middle container's flex property
-* Add a new "width" property with a value of '200px'. So your middle container should look like this:
+* Add a new "width" property in the middle container with a value of '200px'. So your middle container should look like this:
 ```
 					{
 						xtype: 'container', 

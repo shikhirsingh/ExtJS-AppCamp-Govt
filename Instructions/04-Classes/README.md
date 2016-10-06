@@ -13,7 +13,7 @@ In this lab, we will move all our Containers to their own classes and theme them
 ```
 
 * Create a subdirectory inside the app directory called view
-* Create a subdirectory inside the view directory called main
+* Create a subdirectory inside the newly create view directory called main
 
 As a result, at this point your new directory structure inside your appcamp directory should look like this:
 ```
@@ -28,7 +28,7 @@ appcamp/
 ├── sass/
 ```
 
-* * Under the "name" property in Application.js, add a new line with the following, and save the file:
+* * Under the "name" property in Application.js (around line 3), add a new line with the following, and save the file:
 ```
 	requires: ['AppCamp.view.main.MainView'],   // the sub-namespace correspond to directory names you just created. "requires" are like #include in C++
 ```
@@ -181,7 +181,7 @@ Ext.define('AppCamp.view.main.FooterView',{
 
 Next, we covert all css styling to SASS
 
-* Unzip this file and move its contents to the /appcamp/sass/src/ directory
+* Unzip [this file](sass.zip) and move its contents to the /appcamp/sass/src/ directory
 
 Your file structure should look like this after you are finished unzipping and moving the files
 ```
