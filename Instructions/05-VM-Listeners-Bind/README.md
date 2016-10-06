@@ -41,6 +41,7 @@ Ext.define('AppCamp.view.main.MenuViewModel', {
 ```
 
 * Uncomment all comments from appcamp/view/main/MenuView.js
+* Be sure the line that contains the property "expanderOnly" ends with a comma
 * Create a the file app/view/main/MainViewController.js with the following content
 ```
 Ext.define('AppCamp.view.main.MainViewController', {
@@ -89,8 +90,37 @@ Ext.define('AppCamp.view.main.MainViewController', {
 
 });
 ```
+* Uncomment all comments from appcamp/app/view/main/MainView.js
+* Create a directory called store inside of the app directory. Your directory structure should look like this
+```
+appcamp/
+├── app/
+	├── store/
+    ├── view/
+├── app.js
+...
+├── resources/
+├── sass/
+```
 
-* Uncomment all comments from appcamp/view/main/MainView.js
+* Create a new file in appcamp/app/store directory create a file called MenuStore.js with the following content:
+```
+Ext.define('AppCamp.store.MenuStore', {
+	extend: 'Ext.data.TreeStore',
+	storeId: 'menustore',
+    alias: 'store.menustore',
+	autoLoad: true,
+	model: 'Ext.data.TreeModel',
+	proxy: {
+		type: 'ajax',
+		url: 'resources/app/data/menu.json',
+		reader: {
+			type: 'json',
+            rootProperty: 'root.children'
+		}
+	}
+});
+```
 * Visit [http://localhost:1841](http://localhost:1841/appcamp/) 
 
 # Files

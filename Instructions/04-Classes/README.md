@@ -210,7 +210,7 @@ You should see the following:
 
 <img src="class-sass.jpg" align="center" />
 
-# Step 4: Let's fix the sidebarview
+# Step 4: Let's fix the sidebarview to include some content
 
 Let's put three containers in the sidebar. 
 
