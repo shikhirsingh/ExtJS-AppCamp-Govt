@@ -132,7 +132,7 @@ Troubleshooting: Make sure you have a SenchaTraining/ext directory. If you don't
 
 ## Step 8: Install Node.js
 
-* Download and install [Node.js](nodejs.org)
+* Download and install [Node.js](http://www.nodejs.org)
 
 ## Step 9: Install Google Chrome
 
