@@ -138,7 +138,7 @@ This step is optional. We will be covering how to package your apps for mobile d
 npm install -g cordova
 ```
 If npm is not found, please open a new terminal or commmand prompt window and try again
-
+ 
 ## Step 11 (Optional): macOS and Linux attendees only - Install Wine
 
 This step is optional.  If you wish to learn how to package your Ext JS apps on Mac to create an executable binary (.exe files) for Windows, you will need to complete this step. If you choose not to follow this step, you will still be able to package your apps for macOS(.app files) and Linux to create executable binaries.
