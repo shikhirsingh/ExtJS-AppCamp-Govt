@@ -68,21 +68,19 @@ You should see the following:
 						xtype: 'container', 
 						html: 'A red Container',
 						// flex: 1,						
-                        style: 'background-color: red; color: white', 
-						title: "red",
-
+                        style: 'background-color: red; color: white' // inline CSS style
 					},
 					{
 						xtype: 'container', 
 						html: 'A green Container',
                         // flex: 1,
-						style: 'background: green; color:white'
+						style: 'background: green; color:white' // inline CSS style
 					},
 					{
 						xtype: 'container', 
 						html: 'A Purple Container',
 						// flex: 1,
-                        style: 'background: purple; color: white'
+                        style: 'background: purple; color: white' // inline CSS style
 					}					
 					
 				]
@@ -107,8 +105,10 @@ You should see the following:
 <img src="hbox.jpg" align="center" />
 
 ## Step 6: understanding the card layout
-* Change the layout to 'card' and go to the JavaScript console (menu under View > Developer > JavaScript console)
-* In the console, type in the following
+* Change the layout property to 'card' 
+* Save the file and revisit the site [http://localhost:1841](http://localhost:1841/appcamp/) in Google Chrome. Notice, it now only shows the top most container.
+and go to the JavaScript console (menu under View > Developer > JavaScript console)
+* You can programmatically change the container being displayed. In the console, type in the following
 
 ```
 Ext.getCmp('root').setActiveItem(1); // now change the values to 0, 1, 2 in the function
@@ -139,3 +139,11 @@ Ext.getCmp('root').setActiveItem(1); // now change the values to 0, 1, 2 in the 
  
 * Change the size of the browser window and note how the two edge containers change size although the middle container now stays fixed
 * At the end of this step, your app.js file should look like [this](step7.js)
+
+## Step 8: Undstanding fit layout
+* Change the "layout" property in app.js back to 'fit' from 'card'
+* Save the file and revisit the site [http://localhost:1841](http://localhost:1841/appcamp/) in Google Chrome. Notice, it now only shows one container. You cannot change a container using full layout. 
+* Notice, all flex and width properties are ignored with fit layout
+
+
+

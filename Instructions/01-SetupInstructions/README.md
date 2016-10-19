@@ -2,7 +2,7 @@
 
 Prior to attending the Ext JS App Camp, please follow the setup instructions below on your laptop. You will need to bring your laptop at the AppCamp
 
-## Step 1: Obtain a Text editor or IDE
+## Step 1: Obtain a Code editor or IDE
 
 You are free to use any IDE you wish. If you don't have one, consider downloading [Visual Studio Code](http://code.visualstudio.com/) which works on macOS, Linux, or Windows. Other good options include Visual Studio, Eclipse, and WebStorm. Notepad is strongly discouraged. 
 
@@ -17,11 +17,11 @@ Create a folder to hold your work. It is strongly encouraged that you don't call
 ## Step 3: Obtain Ext JS Trial or Commercial
 
 1. Download the Trial version of Ext JS 6.2 from [here](https://www.sencha.com/products/extjs/evaluate/). You will get an email which contains the link to Ext JS 6. If you already own an Ext JS 6.2 license, please download it from [support.sencha.com](http://support.sencha.com) using your credentials 
-2. Unzip the SDK into the SenchaTraining folder and change the SDK folder's name to ext. 
+2. Unzip the SDK into the SenchaTraining folder and change the SDK folder's name to ext
 
 WARNING: When you unzip the folder, it will unzip as ext-6.2.x, you will need to rename it to ext
 
-When you are done, your folder structure will look like this:
+When you are done with this step, your folder structure will look like this:
 
 ```
 SenchaTraining/
@@ -76,7 +76,7 @@ SenchaTraining/
 ```
 ## Step 6: Check your installation
 
-* In the SenchaTraining/ folder run the following command via Terminal / Command Prompt.
+* In the SenchaTraining/ folder run the following command in a fresh Terminal / Command Prompt.
 ```
 sencha web start
 ```
@@ -114,7 +114,7 @@ Troubleshooting: Make sure you have a SenchaTraining/ext directory. If you don't
 
 * Visit the following site [http://localhost:1841/appcamp/](http://localhost:1841/appcamp/) and ensure you can see the following:
 <img src="hello-extjs.jpg" align="center" />
-
+Troubleshooting: Ensure your sencha web start command is still running (from Step 6) in a terminal/command prompt window
 
 ## Step 8: Install Node.js
 
@@ -126,7 +126,7 @@ Troubleshooting: Make sure you have a SenchaTraining/ext directory. If you don't
 
 ## Step 10 (Optional): Install Cordova
 
-This step is optional. We will be covering how to package your apps for mobile devices (Android). Some students who aren't interested in this just prefer to watch and therefore do not need this installed.
+This step is optional. We will be covering how to package your apps for mobile devices. Some students who aren't interested in mobile development just prefer to watch and therefore do not need this installed.
 
 * Download and install [Java SE JDK](http://www.oracle.com/technetwork/java/javase/downloads/index.html) if you don't have it already
 * Windows Users: Make sure Java is set in your environment variable
