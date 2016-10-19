@@ -54,20 +54,6 @@ SenchaTraining/
 ├── workspace.json
 ```
 
-* Now we will need to open the SenchaTraining/workspace.json file and search it to ensure that the "frameworks" property is set to ext. If the "frameworks" property is not included, please add the following lines in the workspace.json file on line 2:
-```
-    "frameworks": {
-        "ext": {
-            "path":"ext",
-            "version":"6.2.0.981"
-        }
-    },
-```
- * Next we will add the following line in the file SenchaTraining/.sencha/workspace/sencha.cfg
-```
-ext.dir=${workspace.dir}/ext
-```
-
 ## Step 5: Install Ext JS Premium Addons
 
 1. In Step 2, we received an email from downloads@sencha.com upon completing the form to download Ext JS Trial which contained the link for Ext JS 6 Trial. This email also contains the link for "Pivot Grid, D3 Adapter, Calendar, and Exporter add-ons". Please download the addons. If you have an Ext JS Premium license, you can download the Addons from the [Support Portal](http://support.sencha.com). The addons in the Support Portal are called "Ext Premium Addons" and available under the Download section of the site.
@@ -113,7 +99,7 @@ Troubleshooting: If the sencha command is not found, open a new terminal or comm
 
 * After you click on the ext folder. You should see the following:
 
- <img src="welcome.jpg" align="center" />
+ <img src="Welcome.png" align="center" />
 
 ## Step 7: HelloWorld Test
 
@@ -132,7 +118,7 @@ Troubleshooting: Make sure you have a SenchaTraining/ext directory. If you don't
 
 ## Step 8: Install Node.js
 
-* Download and install [Node.js](http://www.nodejs.org)
+* Download and install the Current verison of [Node.js](http://www.nodejs.org). 
 
 ## Step 9: Install Google Chrome
 
@@ -140,9 +126,12 @@ Troubleshooting: Make sure you have a SenchaTraining/ext directory. If you don't
 
 ## Step 10 (Optional): Install Cordova
 
-This step is optional. We will be covering how to package your apps for mobile devices. Some students who aren't interested in this just prefer to watch and therefore do not need this installed.
+This step is optional. We will be covering how to package your apps for mobile devices (Android). Some students who aren't interested in this just prefer to watch and therefore do not need this installed.
 
-* Download and install [Android Studio](https://developer.android.com/studio/install.html) or the [Android Command Line Tools](https://developer.android.com/studio/index.html) (which is much smaller)
+* Download and install [Java SE JDK](http://www.oracle.com/technetwork/java/javase/downloads/index.html) if you don't have it already
+* Windows Users: Make sure Java is set in your environment variable
+* Windows Users: Make sure your [JAVA_HOME](https://docs.oracle.com/cd/E19182-01/820-7851/inst_cli_jdk_javahome_t/) environment variable is set
+* Download and install [Android Studio](https://developer.android.com/studio/install.html) or the [Android Command Line Tools](https://developer.android.com/studio/index.html) (which is much smaller in file size)
 * Run the following command from a new Terminal or Command Prompt window
 
 ```
@@ -154,7 +143,7 @@ If npm is not found, please open a new terminal or commmand prompt window and tr
 
 This step is optional.  If you wish to learn how to package your Ext JS apps on Mac to create an executable binary (.exe files) for Windows, you will need to complete this step. If you choose not to follow this step, you will still be able to package your apps for macOS(.app files) and Linux to create executable binaries.
 
-* If you have [MacPorts](macports.org) installed, run the following command:
+* If you have [MacPorts](https://www.macports.org) installed, run the following command:
 ```
 sudo port install wine
 ```
