@@ -5,7 +5,7 @@ In this lab, we will setup routues so that the Center view can be changed with t
 
 ## Step 1: Create new views 
 
-* Unzip [this zip file](view.zip) and place it's contents in the appcamp/app/view folder. Your folder structure should look like this after moving files :
+* Unzip [this zip file](https://github.com/shikhirsingh/ExtJS-AppCamp-Govt/blob/master/Instructions/06-Routes/view.zip) and place it's contents in the appcamp/app/view folder. Your folder structure should look like this after moving files :
 ```
 appcamp/
 ├── app/
@@ -25,10 +25,10 @@ appcamp/
 * In SenchaTraining/app/Application.js, uncomment the "requires" and store properties
 * Remove any duplicate "requires" property if it is present. You should have only one requires array.
 * Uncomment all comments from app/view/main/MainViewController.js 
-* Change the function onMenuViewSelection in the MainViewController.js to add new parameters: tree and node
-```
-	onMenuViewSelectionChange: function (tree, node) {
-```
+* Delete the line alert(node.get('xtype'));  located in the onViewSelectionChange method of the MainViewController.js file
+* Save both files and revisit the site [http://localhost:1841/appcamp](http://localhost:1841/appcamp/) in Google Chrome.
+* Now visit the site [http://localhost:1841/appcamp/#agenciesview](http://localhost:1841/appcamp/#agenciesview/) in Google Chrome. 
+* Notice how the agencies tab is loaded upon launch of webapp
 
 # Files
 
