@@ -95,7 +95,7 @@ Ext.define('AppCamp.view.main.MainView',{
 
 ## Step 2: Add new files for each new container class
 
-* Create a the file app/view/main/SidebarView.js with the following content
+* Create a the file app/view/main/SideBarView.js with the following content
 ```
 Ext.define('AppCamp.view.main.SideBarView',{
 	extend: 'Ext.Container',
@@ -174,11 +174,11 @@ Ext.define('AppCamp.view.main.FooterView',{
 });
 ```
 
-* Visit [http://localhost:1841](http://localhost:1841/appcamp/), and notice there is no stying anymore. This is because the CSS variables are no longer present. 
+* Visit [http://localhost:1841/appcamp](http://localhost:1841/appcamp/), and notice there is no stying anymore. This is because the CSS variables are no longer present. 
 
 # Step 3: Let's add SASS Styling
 
-Next, we covert all css styling to SASS
+Next, we convert all CSS styling to SASS
 
 * Unzip [this file](sass.zip) and move its contents to the /appcamp/sass/src/ directory
 
@@ -196,18 +196,18 @@ appcamp/
     ├── src/
         ├── view/
             ├── dashboard/
-            ├── lab02/
             ├── login/
             ├── main/
             ├── phone/
 ```
 
 * Take a look at some of the .sass files inside the appcamp/src/view/main/. Notice that the it's the same css as in the last lab.
-* Visit [http://localhost:1841](http://localhost:1841/appcamp/)
+* Visit [http://localhost:1841/appcamp](http://localhost:1841/appcamp/)
 
 You should see the following:
 
 <img src="class-sass.jpg" align="center" />
+Troubleshooting: Recheck your appcamp/sass/src/view directory. It should contain four directories.
 
 # Step 4: Let's fix the sidebarview to include some content
 
@@ -266,6 +266,7 @@ Ext.define('AppCamp.view.main.MenuView',{
 
 We now need to reference these files
 * Uncomment the three items properties in app/view/main/Sidebar.js as well as all the requires
+* Save the file and revisit the site [http://localhost:1841/appcamp](http://localhost:1841/appcamp/) in Google Chrome.
 
 We should have something that looks like this:
 <img src="sidebar-part1.jpg" align="center" />

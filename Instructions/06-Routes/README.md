@@ -30,12 +30,6 @@ appcamp/
 	onMenuViewSelectionChange: function (tree, node) {
 ```
 
-## Step 3: JSON files
-
-* Create the following directory structure appcamp/resources/app/view/data/ and place the contents of [this file](menu.json) into it.
-
-* Visit [http://localhost:1841](http://localhost:1841/appcamp/) 
-
 # Files
 
 Your files should look like this at then end of this lab

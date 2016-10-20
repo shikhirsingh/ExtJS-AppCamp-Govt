@@ -96,7 +96,7 @@ You should see the following:
 
 * Uncomment the "layout" property
 * Uncomment the three lines that contain the "flex" properties
-* Save the file and revisit the site [http://localhost:1841](http://localhost:1841/appcamp/) in Google Chrome. It should look like below:
+* Save the file and revisit the site [http://localhost:1841/appcamp](http://localhost:1841/appcamp/) in Google Chrome. It should look like below:
 
 <img src="vbox-flex1.jpg" align="center" />
 
@@ -106,7 +106,7 @@ You should see the following:
 
 ## Step 6: understanding the card layout
 * Change the layout property to 'card' 
-* Save the file and revisit the site [http://localhost:1841](http://localhost:1841/appcamp/) in Google Chrome. Notice, it now only shows the top most container.
+* Save the file and revisit the site [http://localhost:1841/appcamp](http://localhost:1841/appcamp/) in Google Chrome. Notice, it now only shows the top most container.
 and go to the JavaScript console (menu under View > Developer > JavaScript console)
 * You can programmatically change the container being displayed. In the console, type in the following
 
@@ -119,8 +119,8 @@ Ext.getCmp('root').setActiveItem(1); // now change the values to 0, 1, 2 in the 
 ## Step 7: Undstanding flex and width
 
 * Change the "layout" property in app.js back to 'hbox' from 'card'
-* The value of the "flex" property for all the containers is set to one. Change the value of flex for the the middle container to 3. Notice how the middle container doubled in size.
-
+* The value of the "flex" property for all the containers is set to one. Change the value of flex for the the middle container to 3. 
+* Save the file and revisit the site [http://localhost:1841/appcamp](http://localhost:1841/appcamp/) in Google Chrome.  Notice how the middle container doubled in size.
 <img src="flex-3.jpg" align="center" />
 
 * Change the size of the browser. Notice how the ratios of the width of each container stays the same
@@ -136,13 +136,13 @@ Ext.getCmp('root').setActiveItem(1); // now change the values to 0, 1, 2 in the 
 					},
 
 ```
- 
+* Save the file and revisit the site [http://localhost:1841/appcamp](http://localhost:1841/appcamp/) in Google Chrome.
 * Change the size of the browser window and note how the two edge containers change size although the middle container now stays fixed
 * At the end of this step, your app.js file should look like [this](step7.js)
 
 ## Step 8: Undstanding fit layout
 * Change the "layout" property in app.js back to 'fit' from 'card'
-* Save the file and revisit the site [http://localhost:1841](http://localhost:1841/appcamp/) in Google Chrome. Notice, it now only shows one container. You cannot change a container using full layout. 
+* Save the file and revisit the site [http://localhost:1841/appcamp](http://localhost:1841/appcamp/) in Google Chrome. Notice, it now only shows one container. You cannot change a container using full layout. 
 * Notice, all flex and width properties are ignored with fit layout
 
 

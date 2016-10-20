@@ -1,10 +1,21 @@
 {
-	root: {
-		expanded: true,
-		children: [
-			{ text: 'Dashboard', iconCls: 'x-fa fa-dashboard',xtype: 'dashboardview',	leaf: true },
-			{ text: 'Agencies', iconCls: 'x-fa fa-institution', xtype: 'agenciesview', leaf: true },
-			{ text: 'Spending Detail', iconCls: 'x-fa fa-dollar', xtype: 'spendingdetailview', leaf: true }
-		]
+	"root": {
+		"expanded": true,
+		"children": [{
+			"text": "Dashboard",
+			"iconCls": "x-fa fa-dashboard",
+			"xtype": "dashboardview",
+			"leaf": true
+		}, {
+			"text": "Agencies",
+			"iconCls": "x-fa fa-institution",
+			"xtype": "agenciesview",
+			"leaf": true
+		}, {
+			"text": "Spending Detail",
+			"iconCls": "x-fa fa-dollar",
+			"xtype": "spendingdetailview",
+			"leaf": true
+		}]
 	}
 }

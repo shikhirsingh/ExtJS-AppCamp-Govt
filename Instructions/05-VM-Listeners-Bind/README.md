@@ -5,27 +5,23 @@ In this lab, we will get the sidebar tree panel working.
 
 ## Step 1: Setup the JSON data files
 
-* Unzip [this zip file](app.zip) and place it's contents in the appcamp/resources/ folder. Your folder structure should look like this after moving files :
+* Create a new file called menu.json located in appcamp/resources/view/data. Copy and paste the contents from [here](https://raw.githubusercontent.com/shikhirsingh/ExtJS-AppCamp-Govt/master/Instructions/05-VM-Listeners-Bind/menu.json). 
+
 ```
 appcamp/
 ├── app/
 ├── app.js
 ...
 ├── resources/
-    ├── app/
-        ├── view/
-            ├── calendars/
-            ├── data/
-            ├── images/
-            ├── logos/
-            ├── users/
+    ├── data/
+        ├── menu.json
 ├── sass/
 ```
 
 ## Step 2: Setup ViewModel for MenuView and ViewController for MainView
 
-* Uncomment all lines in the MenuView.js
-* Add a comma for the expanderOnly property
+* Uncomment all comments in the appcamp/view/main/MenuView.js
+* Be sure the line that contains the property "expanderOnly" ends with a comma
 * Create a ViewModel file appcamp/view/main/MenuViewModel.js with the following content
 ```
 Ext.define('AppCamp.view.main.MenuViewModel', {
@@ -40,8 +36,6 @@ Ext.define('AppCamp.view.main.MenuViewModel', {
 });
 ```
 
-* Uncomment all comments from appcamp/view/main/MenuView.js
-* Be sure the line that contains the property "expanderOnly" ends with a comma
 * Create a the file app/view/main/MainViewController.js with the following content
 ```
 Ext.define('AppCamp.view.main.MainViewController', {
@@ -78,7 +72,7 @@ Ext.define('AppCamp.view.main.MainViewController', {
 	},
 */
 
-	onMenuViewSelectionChange: function () {
+    onMenuViewSelectionChange: function (tree, node) {
 		alert(node.get('xtype'));
         /*
 		if (node.get('xtype') != undefined) {
@@ -113,7 +107,7 @@ Ext.define('AppCamp.store.MenuStore', {
 	model: 'Ext.data.TreeModel',
 	proxy: {
 		type: 'ajax',
-		url: 'resources/app/data/menu.json',
+		url: 'resources/data/menu.json',
 		reader: {
 			type: 'json',
             rootProperty: 'root.children'
@@ -121,7 +115,7 @@ Ext.define('AppCamp.store.MenuStore', {
 	}
 });
 ```
-* Visit [http://localhost:1841](http://localhost:1841/appcamp/) 
+* Visit [http://localhost:1841/appcamp](http://localhost:1841/appcamp/) 
 
 # Files
 
