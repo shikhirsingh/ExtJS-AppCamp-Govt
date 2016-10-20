@@ -27,7 +27,7 @@ appcamp/
 * Uncomment all comments from app/view/main/MainViewController.js 
 * Delete the line alert(node.get('xtype'));  located in the onViewSelectionChange method of the MainViewController.js file
 * Save both files and revisit the site [http://localhost:1841/appcamp](http://localhost:1841/appcamp/) in Google Chrome.
-* Now visit the site [http://localhost:1841/appcamp/#agenciesview](http://localhost:1841/appcamp/#agenciesview/) in Google Chrome. 
+* Now visit the site [http://localhost:1841/appcamp/#agenciesview](http://localhost:1841/appcamp/#agenciesview) in Google Chrome. 
 * Notice how the agencies tab is loaded upon launch of webapp
 
 # Files
