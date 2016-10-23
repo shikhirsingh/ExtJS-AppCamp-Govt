@@ -41,7 +41,7 @@ Ext.define('AppCamp.view.main.MenuViewModel', {
 Ext.define('AppCamp.view.main.MainViewController', {
 	extend: 'Ext.app.ViewController',
 	alias: 'controller.mainview',
-	//routes: { ':xtype': 'Route' },
+	//routes: { ':xtype': 'route' }, // this will call the route method with param xtype
 
 	init: function() {
 		var refs = this.getReferences();
@@ -56,9 +56,9 @@ Ext.define('AppCamp.view.main.MainViewController', {
 
 	},
 /*
-	Route:function(xtype) {
-		var node=Ext.data.StoreManager.get('menustore').findNode('xtype', xtype);
-		item = this.centerview.child('component[xtype=' + xtype + ']');
+	route: function(xtype) {
+		// add an item 
+		var item = this.centerview.child('component[xtype=' + xtype + ']'); // get child of xtype if it exists
 		if (!item) {
 				try {
 					item = this.centerview.add({ xtype: xtype });
@@ -67,12 +67,17 @@ Ext.define('AppCamp.view.main.MainViewController', {
 					alert(ex);
 				}
 		}
+
+		// Set the node in menuview
+		var node=Ext.data.StoreManager.get('menustore').findNode('xtype', xtype);		
 		this.menuview.setSelection(node);
+
+		// choose a card based on xtype route passed
 		this.centerview.setActiveItem(xtype);
 	},
 */
 
-    onMenuViewSelectionChange: function (tree, node) {
+    onMenuViewSelectionChange: function(tree, node) {
 		alert(node.get('xtype'));
         /*
 		if (node.get('xtype') != undefined) {

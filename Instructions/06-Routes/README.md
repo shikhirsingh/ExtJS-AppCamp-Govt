@@ -19,6 +19,7 @@ appcamp/
 ├── resources/
 ├── sass/
 ```
+* Take a look at each of the new files, notice how they contain a View, ViewModel, and ViewController 
 
 ## Step 2: Setup Routes
 

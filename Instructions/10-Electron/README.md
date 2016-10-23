@@ -22,11 +22,11 @@ appcamp/
 
 ## Step 2: Creating a manifest file 
 
-* If you are on macOS or linux and have NOT installed wine, please download this [package.json](https://gist.github.com/shikhirsingh/a2bd9116b0c2418d065f3519592692a6) file into appcamp/electron directory
-* Otherwise, please download this [package.json](https://gist.github.com/shikhirsingh/ae86d4b8c1735cf9cd19e23130612044) file and put into the appcamp/electron directory
+* If you are on macOS or linux and have NOT installed wine, please download this [package.json](https://gist.githubusercontent.com/shikhirsingh/a2bd9116b0c2418d065f3519592692a6/raw/780cc5ea97da422ae7a2884417d8e32a483cc9a4/package.json) file into appcamp/electron directory
+* Otherwise, please download this [package.json](https://gist.githubusercontent.com/shikhirsingh/ae86d4b8c1735cf9cd19e23130612044/raw/de0496c96fc376b321428146706ec5998dbdaa93/package.json) file and put into the appcamp/electron directory
 
 ## Step 3: Creating a Main Process file
-* Copy the [main.js](https://gist.github.com/shikhirsingh/c690c39a690f63b69ab70a8b1f95bd78) file and place it into the appcamp/electron/app directory
+* Copy the [main.js](https://gist.githubusercontent.com/shikhirsingh/c690c39a690f63b69ab70a8b1f95bd78/raw/c427f8519eb2763113d88f664ece6589d761d6be/main.js) file and place it into the appcamp/electron/app directory
 
 ## Step 4: Installing Electron into your project
 
