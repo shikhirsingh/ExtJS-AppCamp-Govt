@@ -1,6 +1,6 @@
 # App Camp - LAB 5
 
-In this lab, we will get the sidebar tree panel working. 
+In this lab, we will get the sidebar tree panel working and demonstrate MVVM.  
 
 
 ## Step 1: Setup the JSON data files

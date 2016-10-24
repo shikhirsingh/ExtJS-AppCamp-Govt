@@ -144,6 +144,7 @@ Ext.getCmp('root').setActiveItem(1); // now change the values to 0, 1, 2 in the 
 * Change the "layout" property in app.js back to 'fit' from 'card'
 * Save the file and revisit the site [http://localhost:1841/appcamp](http://localhost:1841/appcamp/) in Google Chrome. Notice, it now only shows one container. You cannot change a container using full layout. 
 * Notice, all flex and width properties are ignored with fit layout
+* You should only put one item in the items array if you intend to use the fit property 
 
 
 

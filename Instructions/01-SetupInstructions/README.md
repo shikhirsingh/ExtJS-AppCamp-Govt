@@ -36,7 +36,7 @@ SenchaTraining/
 
 ## Step 4: Create a Sencha Cmd Workspace
 
-On macOS, in a fresh terminal window, go to the SenchaTraining folder and type in the following command:
+On macOS, in a FRESH terminal window, go to the SenchaTraining folder and type in the following command:
 ```
 sencha generate workspace ~/SenchaTraining/
 ```
@@ -74,6 +74,7 @@ SenchaTraining/
 ├── workspace.json
 
 ```
+
 ## Step 6: Check your installation
 
 * In the SenchaTraining/ folder run the following command in a fresh Terminal / Command Prompt.
@@ -90,7 +91,7 @@ Sencha Cmd v6.2.0.103
 [INF] Server started at port : 1841
 
 ```
-Troubleshooting: If the sencha command is not found, open a new terminal or command prompt window and try again. 
+Troubleshooting: If the sencha command is not found, open a new terminal or command prompt window and try again. Also, make sure you are in the SenchaTraining directory when running this command.
 
 * Do not close this Terminal / Command Prompt window until you are done with the Setup Instructions. You may wish to minimize this window to avoid accidently closing this window. 
 
@@ -110,7 +111,7 @@ sencha -sdk ext generate app -starter=false -modern AppCamp appcamp
 cd appcamp
 sencha app build development
 ```
-Troubleshooting: Make sure you have a SenchaTraining/ext directory. If you don't, re-check step 3. 
+Troubleshooting: Make sure you have a SenchaTraining/ext directory. If you don't, re-check step 3 carefully. Also, make sure you are running this command in the SenchaTraining directory.
 
 * Visit the following site [http://localhost:1841/appcamp/](http://localhost:1841/appcamp/) and ensure you can see the following:
 <img src="hello-extjs.jpg" align="center" />

@@ -3,23 +3,14 @@
 In this lab, we will move all our Containers to their own classes and theme them via sass
 
 
-## Step 1: Update Application.js and replace the launch function with the following
+## Step 1: Setup Classes and inheritance
 
-* Let's edit Application.js and replace the launch function with the following:
-```
-	launch: function () {
-			Ext.Viewport.add({ xtype: 'mainview' }); // we are now adding another view class
-	},
-```
-
-* Create a subdirectory inside the app directory called view
-* Create a subdirectory inside the newly create view directory called main
+* Create a subdirectories inside the appcamp root directory with the follow structure: appcamp/app/view/main
 
 As a result, at this point your new directory structure inside your appcamp directory should look like this:
 ```
 appcamp/
 ├── app/
-    ├── Application.js
     ├── view/
         ├── main/
 ├── app.js
@@ -28,12 +19,8 @@ appcamp/
 ├── sass/
 ```
 
-* * Under the "name" property in Application.js (around line 3), add a new line with the following, and save the file:
-```
-	requires: ['AppCamp.view.main.MainView'],   // the sub-namespace correspond to directory names you just created. "requires" are like #include in C++
-```
 
-* Inside the main subdirectory create a new file called MainView.js and copy it's contents from below:
+* Inside the appcamp/view/main subdirectory create a new file called MainView.js and copy it's contents from below:
 ```
 Ext.define('AppCamp.view.main.MainView',{
 	extend: 'Ext.Container',
@@ -92,6 +79,62 @@ Ext.define('AppCamp.view.main.MainView',{
 });
 ```
 
+* Create a new file called Application.js in the appcamp/app subdirectory with the following content
+
+```
+Ext.define('AppCamp.Application', {
+	extend: 'Ext.app.Application',	
+	name: 'AppCamp',
+	requires: ['AppCamp.view.main.MainView'],   // the sub-namespace correspond to directory names you just created. "requires" are like #include in C++	
+	/*
+	requires: [
+		'AppCamp.view.main.MainView',
+		'AppCamp.store.MenuStore'
+	],   // the sub-namespace correspond to directory names you just created. "requires" are like #include in C++
+
+	stores:['MenuStore'],
+	*/
+
+	launch: function () {
+			Ext.Viewport.add({ xtype: 'mainview' }); // we are now adding another view class
+	},
+
+	onAppUpdate: function () {
+			Ext.Msg.confirm('Application Update', 'This application has an update, reload?',
+					function (choice) {
+							if (choice === 'yes') {
+									window.location.reload();
+							}
+					}
+			);
+	}
+});
+
+```
+
+* Lets replace appcamp/app.js file with the following content (remove all old content):
+```
+Ext.application({
+	name: 'AppCamp',
+	extend: 'AppCamp.Application'
+});
+```
+
+As a result, at this point your new directory structure inside your appcamp directory should look like this:
+```
+appcamp/
+├── app/
+    ├── Application.js
+    ├── view/
+        ├── main/
+	        ├── MainView.js		
+├── app.js
+├── app.json
+...
+├── sass/
+```
+
+* Notice the new inheritance structure and how app.js extends Application.js, which in turn launches MainView.js
 
 ## Step 2: Add new files for each new container class
 
@@ -175,12 +218,13 @@ Ext.define('AppCamp.view.main.FooterView',{
 ```
 
 * Visit [http://localhost:1841/appcamp](http://localhost:1841/appcamp/), and notice there is no stying anymore. This is because the CSS variables are no longer present. 
+Troubleshooting: If you are getting a failed an error "Failed to resolve dependency AppCamp.Application" in the terminal window, please stop sencha app watch (Ctrl+C). Run the command 'sencha app build development' and re-run sencha app watch.
 
 # Step 3: Let's add SASS Styling
 
 Next, we convert all CSS styling to SASS
 
-* Unzip [this file](sass.zip) and move its contents to the /appcamp/sass/src/ directory
+* Unzip [this file](sass.zip) and move its contents to the appcamp/sass/src/ directory
 
 Your file structure should look like this after you are finished unzipping and moving the files
 ```
@@ -201,13 +245,13 @@ appcamp/
             ├── phone/
 ```
 
-* Take a look at some of the .sass files inside the appcamp/src/view/main/. Notice that the it's the same css as in the last lab.
+* Take a look at some of the .sass files inside the appcamp/src/view/main/. Notice that the it's the same css as in the last lab. All the inline CSS has been removed! 
 * Visit [http://localhost:1841/appcamp](http://localhost:1841/appcamp/)
 
 You should see the following:
 
 <img src="class-sass.jpg" align="center" />
-Troubleshooting: Recheck your appcamp/sass/src/view directory. It should contain four directories.
+Troubleshooting: Recheck your appcamp/sass/src/view directory. It should contain four directories. Its easy to forget to add the view directory. You may need to stop sencha app watch and restart.
 
 # Step 4: Let's fix the sidebarview to include some content
 

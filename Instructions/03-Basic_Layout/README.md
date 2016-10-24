@@ -2,36 +2,15 @@
 
 In this lab, we will create a common application layout template
 
-
 ## Step 1: Update app.js and Application.js
 
 * Let's edit app.js and replace it's entire content with the following
 
-
 ```
 Ext.application({
-	name: 'AppCamp',
-	extend: 'AppCamp.Application'
-});
-```
+    name: 'AppCamp',
 
-* create directory called app in the appcamp directory
-* In the newly created appcamp/app directory, create a file called Application.js and paste the following into it's contents
-
-```
-Ext.define('AppCamp.Application', {
-	extend: 'Ext.app.Application',
-	name: 'AppCamp',
-	/*
-	requires: [
-		'AppCamp.view.main.MainView',
-		'AppCamp.store.MenuStore'
-	],   // the sub-namespace correspond to directory names you just created. "requires" are like #include in C++
-
-	stores:['MenuStore'],
-	*/
-
-	launch: function () {
+    launch: function () {
 		Ext.Viewport.add(
 			{
 				xtype: 'container',
@@ -81,20 +60,10 @@ Ext.define('AppCamp.Application', {
 				]
 			}
 		);
-	},
 
-	onAppUpdate: function () {
-			Ext.Msg.confirm('Application Update', 'This application has an update, reload?',
-					function (choice) {
-							if (choice === 'yes') {
-									window.location.reload();
-							}
-					}
-			);
-	}
+    }
 });
 ```
-
 
 ## Step 3: Test your App
 
