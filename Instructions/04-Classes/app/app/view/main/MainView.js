@@ -8,15 +8,15 @@ Ext.define('AppCamp.view.main.MainView',{
         'AppCamp.view.main.HeaderView',
         'AppCamp.view.main.CenterView',
         'AppCamp.view.main.FooterView',
+        //'AppCamp.view.main.MainViewController',
         'AppCamp.view.main.DetailView'
     ],
+
 	//reference: 'mainview',   // TO BE DEFINED LATER
 	//controller: 'mainview',
-	//viewModel: 'mainview',
-
-  items: [
+	items: [
 		{
-			xtype: 'sidebarview',
+			xtype: 'sidebarview', 
 			width: 225
 		},
 		{

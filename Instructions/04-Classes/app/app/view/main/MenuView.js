@@ -16,7 +16,6 @@ Ext.define('AppCamp.view.main.MenuView',{
 		//selectionchange: 'onMenuViewSelectionChange'
 	},
 
-    controller: 'main-menuview',
     viewModel: {
         type: 'main-menuview'
     },

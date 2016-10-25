@@ -1,0 +1,45 @@
+.welcomeview {border: 1px solid red; color: white}
+
+.profile { margin-top:10px;width:100%;height:100px;}
+
+.profile_pic {
+	width: 35%;
+	float: left;
+}
+.img-circle {
+	border-radius: 50%;
+}
+.img-circle.profile_img {
+	width: 70%;
+	background: #fff;
+	z-index: 1000;
+	position: inherit;
+	margin-top: 5px;
+	margin-left: 25px;
+	margin-bottom: 15px;
+	border: 1px solid rgba(52,73,94,0.44);
+	padding: 4px;
+}
+.profile_info {
+	padding: 15px 10px 15px;
+	width: 65%;
+	float: left;
+}
+.profile_info {
+	padding: 15px 10px 15px;
+	width: 65%;
+	float: left;
+}
+
+.profile_info span {
+	font-size: 13px;
+	line-height: 30px;
+	color: #BAB8B8;
+}
+
+.profile_info h2 {
+	font-size: 14px;
+	color: #ECF0F1;
+	margin: 0;
+	font-weight: 300;
+}

@@ -5,7 +5,9 @@ In this lab, we will populate the welcome panel
 
 ## Step 1: Create a ViewModel for the MainView 
 
-* We will create a new file called MainViewModel.js located in appcamp/app/view/main with the following content
+* Create a directory appcamp/resources/images/
+* Copy [this file](BarackObama.jpeg) into the newly create folder appcamp/resources/images
+* Next, we will create a new file called MainViewModel.js located in appcamp/app/view/main with the following content
 ```
 Ext.define('AppCamp.view.main.MainViewModel', {
     extend: 'Ext.app.ViewModel',
@@ -48,3 +50,26 @@ Ext.define('AppCamp.view.main.WelcomeView',{
 });
 ```
 * Save all three files and revisit the site [http://localhost:1841/appcamp](http://localhost:1841/appcamp/) in Google Chrome.
+
+## Step 3: Turn of Sencha Fashion!
+
+* Edit appcamp/app.json and look for the "development" property (it's around line number 327)
+* Add  the following property in the development object: "tags": ["fashion"]      
+* Your "development" object will look like this:
+
+```
+    "development": {
+        "watch": {
+            "delay": 250
+        },
+        "tags": [
+            "fashion"
+        ]        
+    },
+```
+
+* Stop (Ctrl + C) and then restart your sencha app watch command in the terminal window
+* Save all three files and revisit the site [http://localhost:1841/appcamp](http://localhost:1841/appcamp/) in Google Chrome.
+* Now, make changes to the resources/src/main/SideBarView.scss file to change the background color to "red" and then save the SCSS file.
+* Notice how your browser updated without a refresh. 
+* Change the color back in SideBarView.scss and notice the automatically reverts back

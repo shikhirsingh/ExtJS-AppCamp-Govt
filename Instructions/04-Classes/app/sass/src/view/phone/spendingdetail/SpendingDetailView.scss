@@ -1,0 +1,6 @@
+$dashboard-item-spacing: 20px;
+
+.dashboard > * > .x-inner,
+.dashboard > * > * > .x-inner {
+    padding: $dashboard-item-spacing 0 0 $dashboard-item-spacing;
+}

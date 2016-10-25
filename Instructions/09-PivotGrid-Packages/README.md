@@ -1,4 +1,4 @@
-# App Camp - LAB 8 - Grid
+# App Camp - LAB 9 - Pivot Grid
 
 In this lab, we will create learn how to create a Pivot Grid
 
@@ -20,43 +20,45 @@ In this lab, we will create learn how to create a Pivot Grid
 
 ```
 Ext.define('AppCamp.view.agencies.AgenciesView',{
-	extend: 'Ext.Container',
-	xtype: 'agenciesview',
-	controller: 'agenciesview',
-	viewModel: 'agenciesview',
-	requires: ['Ext.pivot.Grid'],
-	layout: 'vbox',
+    extend: 'Ext.Container',
+    xtype: 'agenciesview',
+    controller: 'agenciesview',
+    viewModel: 'agenciesview',
+    requires: ['Ext.pivot.Grid'],
+    layout: 'vbox',
 
-	items: [
-		{
-			xtype: 'selectfield',
-			reference: 'reportsselectfield',
-			margin: 10,
-		 	usePicker: false,
-			defaultTabletPickerConfig : {
-				width : 400
-			},
-			label: 'Report:', 
-			listeners: {
-				change: 'onReportsViewSelectfieldChange'
-			}
-		},
-		{
-			xtype: 'pivotgrid',
-			reference: 'reportspivotgrid',
-			margin: 10,
-			shadow: true,
-			flex: 1,
-			matrix: {
-				type: 'local',
-				store: 'AgencyPortfolioStore'
-			}
-		}
-	]
+    items: [
+        {
+            xtype: 'selectfield',
+            reference: 'reportsselectfield',
+            margin: 10,
+            usePicker: false,
+            defaultTabletPickerConfig : {
+                width : 400
+            },
+            label: 'Report:', 
+            listeners: {
+                change: 'onReportsViewSelectfieldChange'
+            }
+        },
+        {
+            xtype: 'pivotgrid',
+            reference: 'reportspivotgrid',
+            margin: 10,
+            shadow: true,
+            flex: 1,
+			bind: {
+				matrix: {
+					type: 'local',
+					store: '{agencyportfolio}'
+				}
+			}            
+        }
+    ]
 });
 ```
 
-* Replace the AgenciesViewModel with the following content
+* Replace the AgenciesViewController with the following content
 ```
 Ext.define('AppCamp.view.agencies.AgenciesViewController', {
 	extend: 'Ext.app.ViewController',
@@ -150,6 +152,24 @@ Ext.define('AppCamp.view.agencies.AgenciesViewController', {
 		}
 	}
 
+});
+```
+
+* Replace AgencyViewModel with the following content
+```
+Ext.define('AppCamp.view.agencies.AgenciesViewModel', {
+	extend: 'Ext.app.ViewModel',
+	alias: 'viewmodel.agenciesview',
+    requires: ['AppCamp.store.AgencyPortfolioStore'],
+	
+	data: {
+		name: 'AppCamp'
+	},
+    stores: {
+        agencyportfolio: {
+            type: 'agencyportfoliostore'
+        }
+    }
 });
 ```
 

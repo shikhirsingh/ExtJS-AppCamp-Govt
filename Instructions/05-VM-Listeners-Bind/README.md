@@ -5,7 +5,7 @@ In this lab, we will get the sidebar tree panel working and demonstrate MVVM.
 
 ## Step 1: Setup the JSON data files
 
-* Create a new file called menu.json located in appcamp/resources/view/data. Copy and paste the contents from [here](https://raw.githubusercontent.com/shikhirsingh/ExtJS-AppCamp-Govt/master/Instructions/05-VM-Listeners-Bind/menu.json). 
+* Create a new file called menu.json located in appcamp/resources/data. Copy and paste the contents from [here](https://raw.githubusercontent.com/shikhirsingh/ExtJS-AppCamp-Govt/master/Instructions/05-VM-Listeners-Bind/menu.json). 
 
 ```
 appcamp/
