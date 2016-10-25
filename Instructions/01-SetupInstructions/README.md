@@ -130,8 +130,7 @@ Troubleshooting: Ensure your sencha web start command is still running (from Ste
 This step is optional. We will be covering how to package your apps for mobile devices. Some students who aren't interested in mobile development just prefer to watch and therefore do not need this installed.
 
 * Download and install [Java SE JDK](http://www.oracle.com/technetwork/java/javase/downloads/index.html) if you don't have it already
-* Windows Users: Make sure Java is set in your environment variable
-* Windows Users: Make sure your [JAVA_HOME](https://docs.oracle.com/cd/E19182-01/820-7851/inst_cli_jdk_javahome_t/) environment variable is set
+* Make sure your [JAVA_HOME](https://docs.oracle.com/cd/E19182-01/820-7851/inst_cli_jdk_javahome_t/) environment variable is set
 * Download and install [Android Studio](https://developer.android.com/studio/install.html) or the [Android Command Line Tools](https://developer.android.com/studio/index.html) (which is much smaller in file size)
 * Run the following command from a new Terminal or Command Prompt window
 
