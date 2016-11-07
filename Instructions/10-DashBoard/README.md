@@ -32,6 +32,10 @@ Ext.define('AppCamp.store.AgencySummaryStore', {
 ```
 Ext.define('AppCamp.view.dashboard.DashboardView',{
 	extend: 'Ext.Container',
+	requires: [
+		'AppCamp.view.dashboard.DashboardViewController',
+		'AppCamp.view.dashboard.DashboardViewModel'
+	],	
 	xtype: 'dashboardview',
 	controller: 'dashboardview',
 	viewModel: 'dashboardview',

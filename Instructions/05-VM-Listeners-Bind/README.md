@@ -124,6 +124,6 @@ Ext.define('AppCamp.store.MenuStore', {
 
 # Files
 
-Your files should look like this at then end of this lab
+* Your files should look like this at then end of this lab
 
 <a href="app/"> Files</a>

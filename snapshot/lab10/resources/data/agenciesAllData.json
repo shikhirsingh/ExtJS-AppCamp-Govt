@@ -1,0 +1,28 @@
+{
+	"result":[
+		{"agencyCode":"005", "agencyName":"Department of Agriculture", "agencyAbbreviation":"USDA", "totalITspendingCYB":3417998007},
+		{"agencyCode":"006", "agencyName":"Department of Commerce","agencyAbbreviation":"Commerce", "totalITspendingCYB":2312403209},
+		{"agencyCode":"007", "agencyName":"Department of Defense","agencyAbbreviation":"DOD", "totalITspendingCYB":30780245000},
+		{"agencyCode":"009", "agencyName":"Department of Health and Human Services","agencyAbbreviation":"HHS", "totalITspendingCYB":12566028000},
+		{"agencyCode":"010", "agencyName":"Department of the Interior","agencyAbbreviation":"Interior", "totalITspendingCYB":1121097323},
+		{"agencyCode":"011", "agencyName":"Department of Justice","agencyAbbreviation":"Justice", "totalITspendingCYB":2699140265},
+		{"agencyCode":"012", "agencyName":"Department of Labor","agencyAbbreviation":"Labor", "totalITspendingCYB":713831873},
+		{"agencyCode":"014", "agencyName":"Department of State","agencyAbbreviation":"State", "totalITspendingCYB":1966177000},
+		{"agencyCode":"015", "agencyName":"Department of the Treasury","agencyAbbreviation":"Tresury", "totalITspendingCYB":3939819266},
+		{"agencyCode":"016", "agencyName":"Social Security Administration","agencyAbbreviation":"SSA", "totalITspendingCYB":1501317000},
+		{"agencyCode":"018", "agencyName":"Department of Education","agencyAbbreviation":"ED", "totalITspendingCYB":688556607},
+		{"agencyCode":"019", "agencyName":"Department of Energy","agencyAbbreviation":"Energy", "totalITspendingCYB":1654506399},
+		{"agencyCode":"020", "agencyName":"Environmental Protection Agency","agencyAbbreviation":"EPA", "totalITspendingCYB":425099000},
+		{"agencyCode":"021", "agencyName":"Department of Transportation","agencyAbbreviation":"DOT", "totalITspendingCYB":3507198762},
+		{"agencyCode":"023", "agencyName":"General Services Administration","agencyAbbreviation":"GSA", "totalITspendingCYB":710158991},
+		{"agencyCode":"024", "agencyName":"Department of Homeland Security","agencyAbbreviation":"DHS", "totalITspendingCYB":6203513000},
+		{"agencyCode":"025", "agencyName":"Department of Housing and Urban Development","agencyAbbreviation":"HUD", "totalITspendingCYB":341571877},
+		{"agencyCode":"026", "agencyName":"National Aeronautics and Space Administration","agencyAbbreviation":"NASA", "totalITspendingCYB":1361327668},
+		{"agencyCode":"027", "agencyName":"Office of Personnel Management","agencyAbbreviation":"OPM", "totalITspendingCYB":147044442},
+		{"agencyCode":"028", "agencyName":"Small Business Administration","agencyAbbreviation":"SBA", "totalITspendingCYB":95137117},
+		{"agencyCode":"029", "agencyName":"Department of Veterans Affairs","agencyAbbreviation":"VA", "totalITspendingCYB":4403414000},
+		{"agencyCode":"184", "agencyName":"U.S. Agency for International Development","agencyAbbreviation":"USAID", "totalITspendingCYB":151358460},
+		{"agencyCode":"422", "agencyName":"National Science Foundation","agencyAbbreviation":"NSF", "totalITspendingCYB":102353000},
+		{"agencyCode":"429", "agencyName":"Nuclear Regulatory Commission","agencyAbbreviation":"NRC", "totalITspendingCYB":153303500}
+	]
+}

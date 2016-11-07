@@ -21,10 +21,16 @@ In this lab, we will create learn how to create a Pivot Grid
 ```
 Ext.define('AppCamp.view.agencies.AgenciesView',{
     extend: 'Ext.Container',
+	requires:[
+		'AppCamp.view.agencies.AgenciesViewController',
+		'AppCamp.view.agencies.AgenciesViewModel',
+		'Ext.field.Select',		
+		'Ext.pivot.Grid'
+	],
+	
     xtype: 'agenciesview',
     controller: 'agenciesview',
     viewModel: 'agenciesview',
-    requires: ['Ext.pivot.Grid'],
     layout: 'vbox',
 
     items: [

@@ -20,6 +20,22 @@ appcamp/
 ├── sass/
 ```
 * Take a look at each of the new files, notice how they contain a View, ViewModel, and ViewController 
+* We need to add requires for each of new view class we just added. Replace the requires object in MainView.js with the following
+```
+    requires: [  // similar to #include
+        'AppCamp.view.main.SideBarView',
+        'AppCamp.view.main.HeaderView',
+        'AppCamp.view.main.CenterView',
+        'AppCamp.view.main.FooterView',
+        'AppCamp.view.main.MainViewController',
+        'AppCamp.view.main.DetailView',
+        'AppCamp.view.dashboard.DashboardView',
+        'AppCamp.view.agencies.AgenciesView',
+        'AppCamp.view.spendingdetail.SpendingDetailView'
+        
+    ],
+```
+
 
 ## Step 2: Setup Routes
 

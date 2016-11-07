@@ -1,4 +1,4 @@
-# App Camp - LAB 6
+# App Camp - LAB 7
 
 In this lab, we will populate the welcome panel  
 
