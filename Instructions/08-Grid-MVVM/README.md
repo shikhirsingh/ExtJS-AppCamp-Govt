@@ -4,7 +4,7 @@ In this lab, we will create a data grid and learn about Models
 
 ## Step 1: Setup the JSON data files
 
-* Download the zip file called [agencyportfolio.zip](agencyportfolio.zip), unzip it contents and place it them into the resources/data directory. Your folder structure will look like this:
+* Download the zip file called [agency-data.zip](agency-data.zip), unzip it contents(two files) and place it them into the resources/data directory. Your folder structure will look like this:
 
 ```
 appcamp/
@@ -14,7 +14,8 @@ appcamp/
 ├── resources/
     ├── data/
         ├── menu.json
-        ├── agencyportfolio.json        
+        ├── agencyportfolio.json
+        ├── agencyAllData.json		
 ├── sass/
 ```
 
@@ -40,7 +41,7 @@ Ext.define('AppCamp.store.AgencyPortfolioStore', {
 });
 ```
 
-* We need a model for the store. Create a file called AgencyPortfolioModel.js in a new directory appcamp/model
+* We need a model for the store. Create a file called AgencyPortfolioModel.js in a new directory appcamp/app/model
 * Place the following contents in the new model file 
 ```
 Ext.define('AppCamp.model.AgencyPortfolioModel', {
@@ -80,7 +81,7 @@ Ext.define('AppCamp.model.AgencyPortfolioModel', {
 
 ## Step 3: Let's update the SpendingDetailView
 
-* Change the contents of appcamp/view/spendingdetail/SpendingDetailView.js with the following
+* Change the contents of appcamp/app/view/spendingdetail/SpendingDetailView.js with the following
 
 ```
 Ext.define('AppCamp.view.spendingdetail.SpendingDetailView',{

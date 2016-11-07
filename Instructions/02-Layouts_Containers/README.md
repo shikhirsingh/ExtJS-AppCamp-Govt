@@ -125,7 +125,7 @@ Ext.getCmp('root').setActiveItem(1); // now change the values to 0, 1, 2 in the 
 
 * Change the size of the browser. Notice how the ratios of the width of each container stays the same
 * Now comment out the middle container's flex property
-* Add a new "width" property in the middle container with a value of '200px'. So your middle container should look like this:
+* Add a new "width" property in the middle container with a value of '100px'. So your middle container should look like this:
 ```
 					{
 						xtype: 'container', 

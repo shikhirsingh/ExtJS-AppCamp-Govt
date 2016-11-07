@@ -6,7 +6,21 @@ In this lab, we will populate the welcome panel
 ## Step 1: Create a ViewModel for the MainView 
 
 * Create a directory appcamp/resources/images/
-* Copy [this file](BarackObama.jpeg) into the newly create folder appcamp/resources/images
+* Unzip [this zip file](images.zip) into this newly created directory. Your contents should look like this.
+
+```
+appcamp/
+├── app/
+├── app.js
+...
+├── resources/
+    ├── data/
+    ├── images/
+        ├── BarackObama.jpeg
+        ├── logos
+├── sass/
+```
+
 * Next, we will create a new file called MainViewModel.js located in appcamp/app/view/main with the following content
 ```
 Ext.define('AppCamp.view.main.MainViewModel', {
@@ -16,11 +30,11 @@ Ext.define('AppCamp.view.main.MainViewModel', {
 		agency: 'Executive Office',
 		firstName: 'Barak',
 		lastName: 'Obama',
+		navCollapsed: false, // to be used in lab 11(toolbar)        
         profile: 'resources/images/BarackObama.jpeg'
 	}
 });
 ```
-* Add a new requires value for the newly created MainViewModel in the last step in the MainView.js file. 
 * We will need to tell the MainView.js that there is a new View Model associated with this view. Add the following code to MainView.js, after the requires property (although it could be placed anywhere)
 ```
     viewModel: {
@@ -51,7 +65,7 @@ Ext.define('AppCamp.view.main.WelcomeView',{
 ```
 * Save all three files and revisit the site [http://localhost:1841/appcamp](http://localhost:1841/appcamp/) in Google Chrome.
 
-## Step 3: Turn of Sencha Fashion!
+## Step 3: Turn on Sencha Fashion!
 
 * Edit appcamp/app.json and look for the "development" property (it's around line number 327)
 * Add  the following property in the development object: "tags": ["fashion"]      
@@ -70,6 +84,6 @@ Ext.define('AppCamp.view.main.WelcomeView',{
 
 * Stop (Ctrl + C) and then restart your sencha app watch command in the terminal window
 * Save all three files and revisit the site [http://localhost:1841/appcamp](http://localhost:1841/appcamp/) in Google Chrome.
-* Now, make changes to the resources/src/main/SideBarView.scss file to change the background color to "red" and then save the SCSS file.
+* Now, make changes to the sass/src/main/SideBarView.scss file to change the background color to "red" and then save the SCSS file.
 * Notice how your browser updated without a refresh. 
 * Change the color back in SideBarView.scss and notice the automatically reverts back

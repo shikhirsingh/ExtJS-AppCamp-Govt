@@ -104,7 +104,7 @@ Troubleshooting: If the sencha command is not found, open a new terminal or comm
 
 ## Step 7: HelloWorld Test
 
-* In the SenchaTraining folder, type in the following three commands in terminal / Command Prompt
+* In the SenchaTraining folder, type in the following three commands in FRESH/NEW terminal / Command Prompt. Do not close the sencha web start command running in the other terminal window. 
 
 ```
 sencha -sdk ext generate app -starter=false -modern AppCamp appcamp

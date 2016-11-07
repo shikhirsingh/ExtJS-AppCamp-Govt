@@ -20,7 +20,7 @@ appcamp/
 ```
 
 
-* Inside the appcamp/view/main subdirectory create a new file called MainView.js and copy it's contents from below:
+* Inside the appcamp/app/view/main subdirectory create a new file called MainView.js and copy it's contents from below:
 ```
 Ext.define('AppCamp.view.main.MainView',{
 	extend: 'Ext.Container',
@@ -309,7 +309,7 @@ Ext.define('AppCamp.view.main.MenuView',{
 ```
 
 We now need to reference these files
-* Uncomment the three items properties in app/view/main/Sidebar.js as well as all the requires
+* Uncomment the three items properties in app/view/main/SidebarView.js as well as all the requires
 * Save the file and revisit the site [http://localhost:1841/appcamp](http://localhost:1841/appcamp/) in Google Chrome.
 
 We should have something that looks like this:
